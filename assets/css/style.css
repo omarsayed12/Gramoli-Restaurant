@@ -91,7 +91,7 @@ body {
 }
 @media screen and (max-width: 769.9px) {
   .upper-nav .social-media-icon {
-    justify-content: center;
+    justify-content: center !important;
   }
   .upper-nav .contact {
     display: block !important;
@@ -239,7 +239,8 @@ body {
 }
 .our-products .product-title-en {
   left: 0;
-  width: 130px;
+  width: 140px;
+  font-size: 18px;
   border-radius: 0px 7px 0 7px;
 }
 .our-products .product-title-en::before {
@@ -277,6 +278,14 @@ footer .link-title .link-name-content {
 }
 footer .copy-container .copy-right {
   font-size: 20px;
+}
+@media screen and (max-width: 568.9px) {
+  footer .list-content {
+    padding-right: 12px;
+  }
+  footer .list-content-en {
+    padding-left: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
