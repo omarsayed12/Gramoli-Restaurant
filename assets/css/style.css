@@ -89,7 +89,7 @@ body {
   -o-transform: scale(1.01);
   transform: scale(1.01);
 }
-@media screen and (max-width: 395.9px) {
+@media screen and (max-width: 769.9px) {
   .upper-nav .social-media-icon {
     justify-content: center;
   }
@@ -128,7 +128,7 @@ body {
 .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
-@media screen and (max-width: 395.9px) {
+@media screen and (max-width: 984.9px) {
   .navbar .navbar-brand {
     width: 205px;
   }
@@ -168,7 +168,7 @@ body {
 
 /* */
 .our-products {
-  margin: 100px 0 50px 0;
+  margin: 60px 0;
 }
 .our-products .healthy-food {
   background-image: url("../imgs/healthy-food1.jfif");
@@ -237,6 +237,16 @@ body {
   height: 100%;
   border-radius: 7px 0px 7px 0px;
 }
+.our-products .product-title-en {
+  left: 0;
+  width: 130px;
+  border-radius: 0px 7px 0 7px;
+}
+.our-products .product-title-en::before {
+  left: 0;
+  width: 0px;
+  border-radius: 0px 7px 0 7px;
+}
 
 footer {
   background-color: #d7d7d7;
@@ -256,6 +266,11 @@ footer .title::before {
   width: 5px;
   height: 22px;
   background-color: #72a73e;
+}
+footer .title-en::before {
+  content: "";
+  top: 2px;
+  left: -11px;
 }
 footer .link-title .link-name-content {
   color: #2b2b2b;
