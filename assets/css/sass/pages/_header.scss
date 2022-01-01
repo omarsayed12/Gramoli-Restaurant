@@ -1,0 +1,124 @@
+
+/*start upper nav*/
+.upper-nav {
+  background-color: $main-color;
+
+  .icon-contact {
+      font-size: $font-size-icon;
+      color: #FFF;
+      padding-right: 2px;
+      @include transition(.4s);
+
+      &:hover{
+          @include transform(scale(1.1));
+          color: #ebe8e8;
+      }
+  }
+  .contact-res {
+      @include transition(.4s);
+
+      .contact-tel, .title {
+          color: #FFF;
+          font-size: 17px;
+      }
+
+      &:hover {
+            @include transform(scale(1.01))
+      }
+  }
+
+  /* media Query*/
+
+  @media screen and (max-width: 769.9px) {
+    .social-media-icon {
+      justify-content: center !important;
+
+    }
+    .contact {
+      display: block !important;
+      text-align: center;;
+    }
+  }
+}
+/*end upper nav*/
+
+/*start navbar*/
+.navbar {
+  .navbar-nav {
+    .nav-link.active,
+    .show>.nav-link {
+        @extend .bg-color;
+        font-size: $main-fot-size;
+    }
+
+    .nav-link {
+      @include transition(.4s);
+      font-size: $main-fot-size;
+      padding: 7px 17px;
+      margin: 0 5px;
+      border-radius: 4px;
+      color:#000;
+      @include transition(.4s);
+
+      &:hover {
+        @extend .bg-color;
+      }
+
+      &:focus {
+        @extend .bg-color;
+      }
+    }
+    :last-child {
+      .nav-link{
+        background-color: transparent;
+      }
+    }
+
+  }
+
+  .navbar-toggler {
+    &:focus {
+      box-shadow:none;
+    }
+  }
+
+  @media screen and (max-width: 984.9px) {
+    .navbar-brand {
+      width:205px;
+
+      img {
+        width: 50% !important;
+      }
+    }
+
+    .navbar-toggler {
+      padding: 2px 3px;
+      border: 2px solid $main-color;
+      border-radius: 0.22rem;
+    }
+
+    .navbar-nav {
+      .nav-link.active,
+      .show>.nav-link {
+        padding: 5px 17px;
+        margin-bottom: 7px;
+        font-size: $main-fot-size;
+        border-bottom: 1px solid $bg-footer
+      }
+
+      :last-child {
+        .nav-link{
+          border-top: 1px solid $main-color;
+          border-radius: 0
+      }
+    }
+    }
+  }
+}
+
+// add style to navbar when scroll
+.sticky {
+  @extend .sticky;
+}
+
+/*end navbar */

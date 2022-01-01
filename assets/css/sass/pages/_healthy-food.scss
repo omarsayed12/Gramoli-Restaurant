@@ -1,0 +1,105 @@
+/*start healthy*/
+.healthy {
+    padding: 60px 0;
+
+    .healthy-title {
+        position: relative;
+        background: url("../imgs/healthy3.png");
+        background-size: cover;
+        width: 253px;
+        height: 155px;
+        border-radius: 8px;
+        @include box-shadow(1px 3px 5px 1px #0d0d0d99);
+
+        &::before {
+            @extend .property-before;
+            background-color: #72a73e;
+            z-index: -1;
+            border-radius: 8px;
+        }
+
+        .healthy-name {
+            position: absolute;
+            bottom: 0;
+            color:#FFF;
+            padding-right: 10px;
+            padding-bottom: 5px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                width: 51px;
+                height: 3px;
+                background-color: #FFF
+            }
+        }
+    }
+
+    .healthy-food-content {
+        .select-healthy-survival {
+            position: relative;
+            margin: 10px 10px  10px 0;
+
+            .healthy-color {
+                color: $main-color;
+            }
+
+            &::before {
+                top: -2px;
+                height: 30px;
+                @extend .right-line-before
+            }
+        }
+    }
+
+    .health-monthly-lanch {
+        background-image: url("../imgs/healthy1-.png");
+        @extend .healthy-launch;
+
+    }
+
+    .health-weekly-lanch {
+        background-image: url("../imgs/Healthy-2.png");
+        @extend .healthy-launch;
+    }
+
+    .health-tow-weakly-lanch {
+        background-image: url("../imgs/healthy3.png");
+        @extend .healthy-launch;
+    }
+
+    .health-lanch {
+        border-radius: 8px;
+        border: 1px solid #f0eaea;
+        padding: 0 12px;
+        @include box-shadow(-2px 1px 5px 2px #0d0d0d0c);
+        @include transition(.5s);
+        &:hover {
+            @include transform(scale(1.02));
+            @include transform(translate(4px, -10px));
+            @include box-shadow(-1px 5px 15px 1px #00000091);
+
+        }
+
+        .health-lanch-content {
+            height: 180px;
+
+            .health-lanch-option {
+               .many-days {
+                   display: inline-block;
+                   color: $main-color;
+                   margin: 10px 1px 13px 0;
+                   font-size: 19px;
+               }
+            }
+            .healthy-lanch-details {
+                margin-top:65px;
+                .healthy-lanch-price {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+/*end healthy*/

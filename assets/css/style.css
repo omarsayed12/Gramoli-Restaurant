@@ -39,13 +39,26 @@ body {
   position: relative;
 }
 
-.property-before, .our-products .product-title::before, .our-products .overlay-food::before {
+.property-before, .healthy .healthy-title::before, .our-products .product-title::before, .our-products .overlay-food::before {
   content: "";
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   position: absolute;
+}
+
+.right-line-before, footer .title::before, .healthy .healthy-food-content .select-healthy-survival::before {
+  content: "";
+  position: absolute;
+  right: -11px;
+  width: 5px;
+  background-color: #72a73e;
+}
+
+.healthy-launch, .healthy .health-tow-weakly-lanch, .healthy .health-weekly-lanch, .healthy .health-monthly-lanch {
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
 }
 
 /*start upper nav*/
@@ -214,6 +227,13 @@ body {
 .our-products .overlay-food::before {
   border-radius: 4px;
 }
+.our-products .overlay-food .our-product-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 .our-products .product-title {
   position: absolute;
   bottom: 0px;
@@ -249,6 +269,113 @@ body {
   border-radius: 0px 7px 0 7px;
 }
 
+/*start healthy*/
+.healthy {
+  padding: 60px 0;
+}
+.healthy .healthy-title {
+  position: relative;
+  background: url("../imgs/healthy3.png");
+  background-size: cover;
+  width: 253px;
+  height: 155px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 3px 5px 1px #0d0d0d99;
+  -moz-box-shadow: 1px 3px 5px 1px #0d0d0d99;
+  -ms-box-shadow: 1px 3px 5px 1px #0d0d0d99;
+  -o-box-shadow: 1px 3px 5px 1px #0d0d0d99;
+  box-shadow: 1px 3px 5px 1px #0d0d0d99;
+}
+.healthy .healthy-title::before {
+  background-color: #72a73e;
+  z-index: -1;
+  border-radius: 8px;
+}
+.healthy .healthy-title .healthy-name {
+  position: absolute;
+  bottom: 0;
+  color: #FFF;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+.healthy .healthy-title .healthy-name::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 51px;
+  height: 3px;
+  background-color: #FFF;
+}
+.healthy .healthy-food-content .select-healthy-survival {
+  position: relative;
+  margin: 10px 10px 10px 0;
+}
+.healthy .healthy-food-content .select-healthy-survival .healthy-color {
+  color: #72a73e;
+}
+.healthy .healthy-food-content .select-healthy-survival::before {
+  top: -2px;
+  height: 30px;
+}
+.healthy .health-monthly-lanch {
+  background-image: url("../imgs/healthy1-.png");
+}
+.healthy .health-weekly-lanch {
+  background-image: url("../imgs/Healthy-2.png");
+}
+.healthy .health-tow-weakly-lanch {
+  background-image: url("../imgs/healthy3.png");
+}
+.healthy .health-lanch {
+  border-radius: 8px;
+  border: 1px solid #f0eaea;
+  padding: 0 12px;
+  -webkit-box-shadow: -2px 1px 5px 2px #0d0d0d0c;
+  -moz-box-shadow: -2px 1px 5px 2px #0d0d0d0c;
+  -ms-box-shadow: -2px 1px 5px 2px #0d0d0d0c;
+  -o-box-shadow: -2px 1px 5px 2px #0d0d0d0c;
+  box-shadow: -2px 1px 5px 2px #0d0d0d0c;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.healthy .health-lanch:hover {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transform: translate(4px, -10px);
+  -moz-transform: translate(4px, -10px);
+  -ms-transform: translate(4px, -10px);
+  -o-transform: translate(4px, -10px);
+  transform: translate(4px, -10px);
+  -webkit-box-shadow: -1px 5px 15px 1px #00000091;
+  -moz-box-shadow: -1px 5px 15px 1px #00000091;
+  -ms-box-shadow: -1px 5px 15px 1px #00000091;
+  -o-box-shadow: -1px 5px 15px 1px #00000091;
+  box-shadow: -1px 5px 15px 1px #00000091;
+}
+.healthy .health-lanch .health-lanch-content {
+  height: 180px;
+}
+.healthy .health-lanch .health-lanch-content .health-lanch-option .many-days {
+  display: inline-block;
+  color: #72a73e;
+  margin: 10px 1px 13px 0;
+  font-size: 19px;
+}
+.healthy .health-lanch .health-lanch-content .healthy-lanch-details {
+  margin-top: 65px;
+}
+.healthy .health-lanch .health-lanch-content .healthy-lanch-details .healthy-lanch-price {
+  color: #72a73e;
+}
+
+/*end healthy*/
+/*start footer */
 footer {
   background-color: #d7d7d7;
   color: #2b2b2b;
@@ -260,13 +387,8 @@ footer .title {
   position: relative;
 }
 footer .title::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  right: -11px;
-  width: 5px;
+  top: -1px;
   height: 22px;
-  background-color: #72a73e;
 }
 footer .title-en::before {
   content: "";
@@ -287,5 +409,7 @@ footer .copy-container .copy-right {
     padding-left: 12px;
   }
 }
+
+/*end footer */
 
 /*# sourceMappingURL=style.css.map */

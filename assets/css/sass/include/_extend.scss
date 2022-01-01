@@ -37,3 +37,17 @@
     right: 0;
     position: absolute;
 }
+
+.right-line-before {
+    content: "";
+    position: absolute;
+    right: -11px;
+    width: 5px;
+    background-color: $main-color;
+
+}
+
+.healthy-launch {
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+}
