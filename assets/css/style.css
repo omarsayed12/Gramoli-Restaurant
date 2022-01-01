@@ -233,6 +233,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 99999;
 }
 .our-products .product-title {
   position: absolute;
@@ -269,7 +270,7 @@ body {
   border-radius: 0px 7px 0 7px;
 }
 
-/*start healthy*/
+/*start healthy ar*/
 .healthy {
   padding: 60px 0;
 }
@@ -374,7 +375,16 @@ body {
   color: #72a73e;
 }
 
-/*end healthy*/
+/*end healthy ar*/
+/*start healthy en */
+.select-healthy-survival-en {
+  padding-left: 12px;
+}
+.select-healthy-survival-en::before {
+  left: 0;
+}
+
+/*end healthy en */
 /*start footer */
 footer {
   background-color: #d7d7d7;
