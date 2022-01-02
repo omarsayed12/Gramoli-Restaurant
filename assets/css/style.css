@@ -307,6 +307,12 @@ body {
   height: 3px;
   background-color: #FFF;
 }
+@media screen and (max-width: 569px) {
+  .healthy .healthy-title {
+    width: 197px;
+    height: 130px;
+  }
+}
 .healthy .healthy-food-content .select-healthy-survival {
   position: relative;
   margin: 10px 10px 10px 0;
@@ -331,6 +337,7 @@ body {
   border-radius: 8px;
   border: 1px solid #f0eaea;
   padding: 0 12px;
+  margin: 15px 0;
   -webkit-box-shadow: -2px 1px 5px 2px #0d0d0d0c;
   -moz-box-shadow: -2px 1px 5px 2px #0d0d0d0c;
   -ms-box-shadow: -2px 1px 5px 2px #0d0d0d0c;
@@ -368,8 +375,16 @@ body {
   margin: 10px 1px 13px 0;
   font-size: 19px;
 }
+.healthy .health-lanch .health-lanch-content .health-lanch-option .health-lanch-name {
+  font-size: 20px;
+}
 .healthy .health-lanch .health-lanch-content .healthy-lanch-details {
   margin-top: 65px;
+}
+@media screen and (max-width: 600px) {
+  .healthy .health-lanch .health-lanch-content .healthy-lanch-details {
+    margin-top: 65px;
+  }
 }
 .healthy .health-lanch .health-lanch-content .healthy-lanch-details .healthy-lanch-price {
   color: #72a73e;
@@ -382,6 +397,28 @@ body {
 }
 .select-healthy-survival-en::before {
   left: 0;
+}
+
+.healthy .healthy-title-en {
+  background-image: url("../imgs/healthy3-en.png");
+}
+.healthy .healthy-title-en .healthy-name-en {
+  padding-left: 10px;
+}
+.healthy .healthy-title-en .healthy-name-en::before {
+  width: 81px;
+}
+.healthy .health-monthly-lanch-en {
+  background-image: url("../imgs/Healthy-2-en.png");
+  background-position: right top;
+}
+.healthy .health-weekly-lanch-en {
+  background-image: url("../imgs/healthy2-en.png");
+  background-position: right top;
+}
+.healthy .health-tow-weakly-lanch-en {
+  background-image: url("../imgs/Healthy-2-en.png");
+  background-position: right top;
 }
 
 /*end healthy en */
