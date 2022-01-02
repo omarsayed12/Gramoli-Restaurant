@@ -61,6 +61,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.click-link, .healthy .health-lanch .our-product-link, .our-products .overlay-food .our-product-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+
 /*start upper nav*/
 .upper-nav {
   background-color: #72a73e;
@@ -184,13 +193,13 @@ body {
   margin: 60px 0;
 }
 .our-products .healthy-food {
-  background-image: url("../imgs/healthy-food1.jfif");
+  background-image: url("../imgs/healthy-food1.JPEG");
 }
 .our-products .food-meal {
-  background-image: url("../imgs/healthy-food2.jfif");
+  background-image: url("../imgs/healthy-food2.JPEG");
 }
 .our-products .food-menu {
-  background-image: url("../imgs/healthy-food3.jfif");
+  background-image: url("../imgs/healthy-food3.JPEG");
 }
 .our-products .overlay-food {
   position: relative !important;
@@ -226,14 +235,6 @@ body {
 }
 .our-products .overlay-food::before {
   border-radius: 4px;
-}
-.our-products .overlay-food .our-product-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 99999;
 }
 .our-products .product-title {
   position: absolute;
@@ -276,7 +277,7 @@ body {
 }
 .healthy .healthy-title {
   position: relative;
-  background: url("../imgs/healthy3.png");
+  background: url("../imgs/healthy3.JPEG");
   background-size: cover;
   width: 253px;
   height: 155px;
@@ -325,15 +326,16 @@ body {
   height: 30px;
 }
 .healthy .health-monthly-lanch {
-  background-image: url("../imgs/healthy1-.png");
+  background-image: url("../imgs/healthy1.JPEG");
 }
 .healthy .health-weekly-lanch {
-  background-image: url("../imgs/Healthy-2.png");
+  background-image: url("../imgs/healthy2.JPEG");
 }
 .healthy .health-tow-weakly-lanch {
-  background-image: url("../imgs/healthy3.png");
+  background-image: url("../imgs/healthy3.JPEG");
 }
 .healthy .health-lanch {
+  position: relative;
   border-radius: 8px;
   border: 1px solid #f0eaea;
   padding: 0 12px;
@@ -389,7 +391,6 @@ body {
 .healthy .health-lanch .health-lanch-content .healthy-lanch-details .healthy-lanch-price {
   color: #72a73e;
 }
-
 /*end healthy ar*/
 /*start healthy en */
 .select-healthy-survival-en {
@@ -400,7 +401,7 @@ body {
 }
 
 .healthy .healthy-title-en {
-  background-image: url("../imgs/healthy3-en.png");
+  background-image: url("../imgs/healthy3-en.JPEG");
 }
 .healthy .healthy-title-en .healthy-name-en {
   padding-left: 10px;
@@ -409,19 +410,142 @@ body {
   width: 81px;
 }
 .healthy .health-monthly-lanch-en {
-  background-image: url("../imgs/Healthy-2-en.png");
+  background-image: url("../imgs/healthy2.-en.JPEG");
   background-position: right top;
 }
 .healthy .health-weekly-lanch-en {
-  background-image: url("../imgs/healthy2-en.png");
+  background-image: url("../imgs/healthy3-en.JPEG");
   background-position: right top;
 }
 .healthy .health-tow-weakly-lanch-en {
-  background-image: url("../imgs/Healthy-2-en.png");
+  background-image: url("../imgs/healthy2.-en.JPEG");
   background-position: right top;
 }
 
 /*end healthy en */
+.total-days .day {
+  text-align: center;
+}
+.total-days .day .day-ar {
+  color: #222;
+  padding-right: 6px;
+}
+.total-days .day .day-num {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #a8a8a8;
+  color: #222;
+}
+
+.mealz-content {
+  border-radius: 10px;
+  margin: 15px 0;
+  -webkit-box-shadow: -2px 1px 5px 2px #0d0d0d61;
+  -moz-box-shadow: -2px 1px 5px 2px #0d0d0d61;
+  -ms-box-shadow: -2px 1px 5px 2px #0d0d0d61;
+  -o-box-shadow: -2px 1px 5px 2px #0d0d0d61;
+  box-shadow: -2px 1px 5px 2px #0d0d0d61;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.mealz-content:hover {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transform: translate(4px, -10px);
+  -moz-transform: translate(4px, -10px);
+  -ms-transform: translate(4px, -10px);
+  -o-transform: translate(4px, -10px);
+  transform: translate(4px, -10px);
+  -webkit-box-shadow: -1px 5px 15px 1px #00000091;
+  -moz-box-shadow: -1px 5px 15px 1px #00000091;
+  -ms-box-shadow: -1px 5px 15px 1px #00000091;
+  -o-box-shadow: -1px 5px 15px 1px #00000091;
+  box-shadow: -1px 5px 15px 1px #00000091;
+}
+.mealz-content .meal-img {
+  height: 165px;
+  position: relative;
+}
+.mealz-content .meal-img .select-chef {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  position: absolute;
+  top: 10px;
+  padding: 0 10px;
+  width: 100%;
+}
+.mealz-content .meal-img .select-chef .kcal {
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: #ffbd55;
+  padding: 3px 10px;
+}
+.mealz-content .meal-img .select-chef .btn-toggle {
+  background-color: #72a73e;
+  color: #FFF;
+  padding: 3px 18px;
+}
+.mealz-content .meal-img .select-chef .btn-toggle:focus {
+  box-shadow: none;
+  outline: 0;
+}
+.mealz-content .meal-img .select-chef .dropdown-toggle::after {
+  position: absolute;
+  left: 4px;
+  top: 13px;
+}
+.mealz-content .meal-img .select-chef .dropdown-menu {
+  border: 0;
+  border-radius: 0 0px 5px 6px;
+  min-width: 123px;
+}
+.mealz-content .meal-img .select-chef .dropdown-menu .dropdown-item.active:active,
+.mealz-content .meal-img .select-chef .dropdown-menu .dropdown-item:active {
+  background-color: #72a73e;
+}
+.mealz-content .meal-img .img-meal {
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  width: 10%;
+  height: 100%;
+}
+.mealz-content .meal-img .gramoli-logo {
+  position: relative;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  margin-top: -20px;
+}
+.mealz-content .meal-img .gramoli-logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  right: 20px;
+  bottom: 0;
+  display: block;
+  background: url(../imgs/logo.PNG);
+  background-size: cover;
+  background-color: #FFF;
+  border-radius: 50%;
+  border: 2px solid #72a73e;
+}
+.mealz-content .meal-detail .meal-title .btn-select {
+  background-color: #72a73e;
+  color: #FFF;
+}
+
 /*start footer */
 footer {
   background-color: #d7d7d7;

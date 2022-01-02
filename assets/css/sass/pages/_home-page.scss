@@ -34,17 +34,17 @@
   margin: 60px 0;
 
   .healthy-food {
-    background-image: url('../imgs/healthy-food1.jfif');
+    background-image: url('../imgs/healthy-food1.JPEG');
     @extend .property-bg-img;
   }
 
 
   .food-meal {
-    background-image: url('../imgs/healthy-food2.jfif');
+    background-image: url('../imgs/healthy-food2.JPEG');
     @extend .property-bg-img;
   }
   .food-menu {
-    background-image: url('../imgs/healthy-food3.jfif');
+    background-image: url('../imgs/healthy-food3.JPEG');
     @extend .property-bg-img;
   }
 
@@ -78,12 +78,7 @@
     }
 
     .our-product-link {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      z-index: 99999;
+        @extend .click-link;
     }
   }
 

@@ -51,3 +51,12 @@
     background-size: 75% 75%;
     background-repeat: no-repeat;
 }
+
+.click-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+}

@@ -4,7 +4,7 @@
 
     .healthy-title {
         position: relative;
-        background: url("../imgs/healthy3.png");
+        background: url("../imgs/healthy3.JPEG");
         background-size: cover;
         width: 253px;
         height: 155px;
@@ -59,22 +59,23 @@
     }
 
     .health-monthly-lanch {
-        background-image: url("../imgs/healthy1-.png");
+        background-image: url("../imgs/healthy1.JPEG");
         @extend .healthy-launch;
 
     }
 
     .health-weekly-lanch {
-        background-image: url("../imgs/Healthy-2.png");
+        background-image: url("../imgs/healthy2.JPEG");
         @extend .healthy-launch;
     }
 
     .health-tow-weakly-lanch {
-        background-image: url("../imgs/healthy3.png");
+        background-image: url("../imgs/healthy3.JPEG");
         @extend .healthy-launch;
     }
 
     .health-lanch {
+        position: relative;
         border-radius: 8px;
         border: 1px solid #f0eaea;
         padding: 0 12px;
@@ -114,6 +115,10 @@
                 }
             }
         }
+
+        .our-product-link {
+            @extend .click-link;
+        }
     }
 }
 /*end healthy ar*/
@@ -133,7 +138,7 @@
 .healthy  {
 
     .healthy-title-en {
-        background-image: url("../imgs/healthy3-en.png") ;
+        background-image: url("../imgs/healthy3-en.JPEG") ;
 
         .healthy-name-en {
             padding-left: 10px;
@@ -143,17 +148,17 @@
         }
     }
     .health-monthly-lanch-en {
-        background-image: url("../imgs/Healthy-2-en.png");
+        background-image: url("../imgs/healthy2.-en.JPEG");
         background-position: right top;
     }
 
     .health-weekly-lanch-en{
-        background-image: url("../imgs/healthy2-en.png");
+        background-image: url("../imgs/healthy3-en.JPEG");
         background-position: right top;
     }
 
     .health-tow-weakly-lanch-en {
-        background-image: url("../imgs/Healthy-2-en.png");
+        background-image: url("../imgs/healthy2.-en.JPEG");
         background-position: right top;
 
     }

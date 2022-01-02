@@ -38,7 +38,52 @@
       }
     }
     ]
-  },100);
+  });
+
+  $('.slider-days').slick({
+    rtl: true,
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 24,
+    slidesToScroll: 10,
+    speed: 3000,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 15,
+        slidesToScroll: 5,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 10,
+        slidesToScroll: 4,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 568,
+      settings: {
+        slidesToShow: 8,
+        slidesToScroll: 3,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 443,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 3,
+        dots: false
+      }
+    }
+
+    ]
+  });
+
 
 
   $('.responsive-en').slick({
