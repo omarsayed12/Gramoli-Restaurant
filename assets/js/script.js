@@ -1,5 +1,3 @@
-
-setTimeout(()=> {
   $('.responsive').slick({
     rtl: true,
     arrows: false,
@@ -83,7 +81,6 @@ setTimeout(()=> {
     }
     ]
   });
-});
 
 let navbar = document.getElementById('fixed-nav');
 window.addEventListener("scroll", ()=> {
