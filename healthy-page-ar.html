@@ -9,10 +9,20 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
 		integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+
+	<!-- slick slider links-->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+	<!-- Font Awesome  -->
 	<link rel="stylesheet" href="./assets/vendor/all.min.css">
+
+	<!-- style css -->
 	<link rel="stylesheet" href="./assets/css/style.css">
 
-	<title>الاشتراكات</title>
+	<title>اشتراكات الباقه الصحيه</title>
 </head>
 
 <body>
@@ -26,7 +36,7 @@
 							<a href="#" class="nav-link"><i class="fab fa-facebook-f icon-contact"></i></a>
 							<a href="#" class="nav-link"> <i class="fab fa-twitter icon-contact"></i></a>
 							<a href="#" class="nav-link"><i class="fab fa-whatsapp icon-contact"></i></a>
-							<a href="#" class="nav-link"><i class="fab fa-google-plus-g icon-contact"></i></a>
+							<a href="#" class="nav-link"><i class="fab fa-snapchat-ghost icon-contact"></i></a>
 							<a href="#" class="nav-link"><i class="fab fa-instagram icon-contact"></i></a>
 						</div>
 					</div>
@@ -50,7 +60,7 @@
 		<!-- start nav -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-white p-0" id="fixed-nav">
 			<div class="container flex-row-reverse">
-				<a class="navbar-brand text-end" href="#">
+				<a class="navbar-brand text-end" href="./index.html">
 					<img src="./assets/imgs/brand-logo.JPEG" class="w-25" alt="Gramoli Logo">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -83,14 +93,14 @@
 		<!-- end nav -->
 
 		<!-- start section healthy -->
-		<section class="healthy">
+		<section class="healthy" id="header">
 			<section class="container">
 				<div class="healthy-title">
-					<h3 class="healthy-name">صحي</h4>
+					<h4 class="healthy-name">اشتراكات</h4>
 				</div>
 				<section class="healthy-food-content my-5">
 					<h4 class="select-healthy-survival">
-						أختر باقه <span class="healthy-color">صحي</span>
+						أختر باقه <span class="healthy-color">الصحيه</span>
 					</h4>
 					<div class="row justify-content-center py-4">
 						<div class="col-md-8 col-lg-4">
@@ -110,11 +120,11 @@
 										<span class="price-delivery-strike">السعر يشمل التوصيل والضريبه</span>
 									</div>
 								</div>
-								<a href="./healthy-page-ar.html" class="our-product-link"></a>
+								<a href="./monthely-lunch-ar.html" class="our-product-link"></a>
 							</div>
 						</div>
 						<div class="col-md-8 col-lg-4">
-							<div class="health-weekly-lanch health-lanch">
+							<div class="healthy-weekly-lanch health-lanch">
 								<div class="health-lanch-content">
 									<div class="health-lanch-option">
 										<span class="many-days">
@@ -133,7 +143,7 @@
 								<a href="./healthy-page-ar.html" class="our-product-link"></a>
 							</div>
 						</div>
-						<div class="col-md-4 col-md-8 col-lg-4">
+						<div class="col-md-8 col-lg-4">
 							<div class="health-tow-weakly-lanch health-lanch">
 								<div class="health-lanch-content">
 									<div class="health-lanch-option">
@@ -163,20 +173,15 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-lg-3 my-3">
-					<div class="list-content">
-						<h5 class="title h4">الملكيه</h5>
-						<ul class="private-condetion links list-unstyled m-0">
-							<li class="link-title">
-								<a href="#" class="nav-link link-name-content p-0 ">الخصوصيه</a>
-							</li>
-							<li class="link-title">
-								<a href=" #" class="nav-link link-name-content p-0">الشروط والاحكام</a>
-							</li>
-						</ul>
+				<div class="col-md-12 col-lg-3 my-2 d-flex justify-content-center">
+					<div class="who-we list-content">
+						<h5 class="title h4">جرامولي</h5>
+						<p class="who-we-content">جرامولي مطعم يقدم وجبات طازجه صحيه فيه الكثير من اطباق الطعام المختلفه
+							والشهيه لا تتردد في
+							الزياره</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-lg-3 my-2">
+				<div class="col-md-12 col-lg-3 my-2 d-flex justify-content-center">
 					<div class="list-content">
 						<h5 class="title h4">تابعنا</h5>
 						<div class="social-media-icon d-flex">
@@ -198,7 +203,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-12 col-lg-3 my-2">
+				<div class="col-md-12 col-lg-3 my-2 d-flex justify-content-center">
 					<div class="list-content">
 						<h5 class="title h4">الاتصال</h5>
 						<ul class="links-contact links list-unstyled p-0 m-0">
@@ -215,15 +220,20 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-12 col-lg-3 my-2">
-					<div class="who-we list-content">
-						<h5 class="title h4">جرامولي</h5>
-						<p class="who-we-content">جرامولي مطعم يقدم وجبات طازجه صحيه فيه الكثير من اطباق الطعام
-							المختلفه
-							والشهيه لا تتردد في
-							الزياره</p>
+				<div class="col-md-12 col-lg-3 my-3 d-flex justify-content-center">
+					<div class="list-content">
+						<h5 class="title h4">الملكيه</h5>
+						<ul class="private-condetion links list-unstyled m-0">
+							<li class="link-title">
+								<a href="#" class="nav-link link-name-content p-0 ">الخصوصيه</a>
+							</li>
+							<li class="link-title">
+								<a href=" #" class="nav-link link-name-content p-0">الشروط والاحكام</a>
+							</li>
+						</ul>
 					</div>
 				</div>
+
 			</div>
 			<hr class="line">
 			<div class="copy-container">
@@ -237,6 +247,11 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
+	<!-- Slick Carousel jquery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- Slick Carousel Js -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 	<script src="./assets/js/script.js"></script>
 </body>
 

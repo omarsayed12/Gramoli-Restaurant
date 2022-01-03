@@ -1,15 +1,9 @@
   $('.responsive').slick({
     rtl: true,
-    arrows: false,
     pauseOnHover: true,
-    slidesPerGroup: 1,
-    slidesPerView: 3,
-    loop: true,
     autoplay: true,
-    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    focusOnSelect: true,
     speed: 1700,
     responsive: [
     {
@@ -17,7 +11,6 @@
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true,
         dots: false
       }
     },
@@ -40,10 +33,38 @@
     ]
   });
 
-  $('.slider-days').slick({
-    rtl: true,
+  $('.responsive-en').slick({
     arrows: false,
     autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 1700,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 568,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
+  });
+  $('.slider-days').slick({
+    rtl: true,
     slidesToShow: 24,
     slidesToScroll: 10,
     speed: 3000,
@@ -53,7 +74,6 @@
       settings: {
         slidesToShow: 15,
         slidesToScroll: 5,
-        dots: false
       }
     },
     {
@@ -61,7 +81,6 @@
       settings: {
         slidesToShow: 10,
         slidesToScroll: 4,
-        dots: false
       }
     },
     {
@@ -69,59 +88,49 @@
       settings: {
         slidesToShow: 8,
         slidesToScroll: 3,
-        dots: false
       }
     },
     {
       breakpoint: 443,
       settings: {
         slidesToShow: 6,
-        slidesToScroll: 3,
-        dots: false
+        slidesToScroll: 2,
       }
     }
-
     ]
   });
-
-
-
-  $('.responsive-en').slick({
-    arrows: false,
-    pauseOnHover: true,
-    slidesPerGroup: 1,
-    slidesPerView: 3,
-    loop: true,
-    autoplay: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    focusOnSelect: true,
-    speed: 1700,
+  
+  $('.slider-days-en').slick({
+    slidesToShow: 24,
+    slidesToScroll: 10,
+    speed: 3000,
     responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: false
+        slidesToShow: 15,
+        slidesToScroll: 5,
       }
     },
     {
       breakpoint: 991,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        dots: false
+        slidesToShow: 10,
+        slidesToScroll: 4,
       }
     },
     {
       breakpoint: 568,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false
+        slidesToShow: 8,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 443,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 2,
       }
     }
     ]

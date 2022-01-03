@@ -56,7 +56,7 @@ body {
   background-color: #72a73e;
 }
 
-.healthy-launch, .healthy .health-tow-weakly-lanch, .healthy .health-weekly-lanch, .healthy .health-monthly-lanch {
+.healthy-launch, .healthy .health-tow-weakly-lanch, .healthy .healthy-weekly-lanch, .healthy .health-monthly-lanch {
   background-size: 75% 75%;
   background-repeat: no-repeat;
 }
@@ -277,7 +277,7 @@ body {
 }
 .healthy .healthy-title {
   position: relative;
-  background: url("../imgs/healthy3.JPEG");
+  background-image: url("../imgs/healthy3.JPEG");
   background-size: cover;
   width: 253px;
   height: 155px;
@@ -304,7 +304,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 51px;
+  width: 68px;
   height: 3px;
   background-color: #FFF;
 }
@@ -328,8 +328,8 @@ body {
 .healthy .health-monthly-lanch {
   background-image: url("../imgs/healthy1.JPEG");
 }
-.healthy .health-weekly-lanch {
-  background-image: url("../imgs/healthy2.JPEG");
+.healthy .healthy-weekly-lanch {
+  background-image: url("../imgs/healthy1.JPEG");
 }
 .healthy .health-tow-weakly-lanch {
   background-image: url("../imgs/healthy3.JPEG");
@@ -407,7 +407,7 @@ body {
   padding-left: 10px;
 }
 .healthy .healthy-title-en .healthy-name-en::before {
-  width: 81px;
+  width: 128px;
 }
 .healthy .health-monthly-lanch-en {
   background-image: url("../imgs/healthy2.-en.JPEG");
@@ -544,6 +544,9 @@ body {
 .mealz-content .meal-detail .meal-title .btn-select {
   background-color: #72a73e;
   color: #FFF;
+}
+.mealz-content .meal-detail .meal-title .meal-name-en {
+  font-size: 18px;
 }
 
 /*start footer */

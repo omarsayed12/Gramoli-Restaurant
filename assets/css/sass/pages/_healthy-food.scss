@@ -4,7 +4,7 @@
 
     .healthy-title {
         position: relative;
-        background: url("../imgs/healthy3.JPEG");
+        background-image: url("../imgs/healthy3.JPEG");
         background-size: cover;
         width: 253px;
         height: 155px;
@@ -29,7 +29,7 @@
                 content: "";
                 position: absolute;
                 bottom: 0;
-                width: 51px;
+                width: 68px;
                 height: 3px;
                 background-color: #FFF
             }
@@ -64,8 +64,8 @@
 
     }
 
-    .health-weekly-lanch {
-        background-image: url("../imgs/healthy2.JPEG");
+    .healthy-weekly-lanch {
+       background-image: url("../imgs/healthy1.JPEG");
         @extend .healthy-launch;
     }
 
@@ -124,9 +124,6 @@
 /*end healthy ar*/
 
 /*start healthy en */
-// .healthy-title-en {
-
-// }
 
 .select-healthy-survival-en {
     padding-left: 12px;
@@ -143,7 +140,7 @@
         .healthy-name-en {
             padding-left: 10px;
             &::before {
-                width: 81px;
+                width: 128px;
             }
         }
     }
@@ -152,7 +149,7 @@
         background-position: right top;
     }
 
-    .health-weekly-lanch-en{
+    .health-weekly-lanch-en {
         background-image: url("../imgs/healthy3-en.JPEG");
         background-position: right top;
     }
