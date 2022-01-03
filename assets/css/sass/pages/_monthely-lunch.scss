@@ -1,128 +1,127 @@
 .total-days {
-    .day {
-        text-align: center;
-        .day-ar {
-            color: #222;
-            padding-right: 6px;
-        }
-        .day-num {
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            border: 1px solid #a8a8a8;
-            color: #222;
-        }
+  .day {
+    text-align: center;
+    .day-ar {
+      color: #222;
+      padding-right: 6px;
     }
+    .day-num {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border: 1px solid #a8a8a8;
+      color: #222;
+    }
+  }
 }
 
 .mealz-content {
-    border-radius: 10px;
-    margin: 15px 0;
-    @include box-shadow(-2px 1px 5px 2px #0d0d0d61);
-    @include transition(.5s);
+  border-radius: 10px;
+  margin: 15px 0;
+  @include box-shadow(-2px 1px 5px 2px #0d0d0d61);
+  @include transition(.5s);
 
-    &:hover {
-        @include transform(scale(1.02));
-        @include transform(translate(4px, -10px));
-        @include box-shadow(-1px 5px 15px 1px #00000091);
-    }
-    .meal-img {
-        height: 165px;
-        position: relative;
+  &:hover {
+    @include transform(scale(1.02));
+    @include transform(translate(4px, -10px));
+    @include box-shadow(-1px 5px 15px 1px #00000091);
+  }
+  .meal-img {
+    height: 165px;
+    position: relative;
 
-        .select-chef {
-            display: flex;
-            justify-content: space-between;
-            align-self: center;
+    .select-chef {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      position: absolute;
+      top: 10px;
+      padding: 0 10px;
+      width: 100%;
+      .kcal {
+        font-size: 15px;
+        border-radius: 4px;
+        background-color: #ffbd55;
+        padding: 3px 10px
+        }
+        .btn-toggle {
+          background-color: $main-color;
+          color: #FFF;
+          padding: 3px 18px;
+
+          &:focus {
+              box-shadow: none;
+              outline: 0;
+          }
+        }
+        .dropdown-toggle {
+          &::after {
             position: absolute;
-            top: 10px;
-            padding: 0 10px;
-            width: 100%;
-            .kcal {
-                font-size: 15px;
-                border-radius: 4px;
-                background-color: #ffbd55;
-                padding: 3px 10px
-            }
-            .btn-toggle {
-                background-color: $main-color;
-                color: #FFF;
-                padding: 3px 18px;
-
-                &:focus {
-                    box-shadow: none;
-                    outline: 0;
-                }
-            }
-            .dropdown-toggle {
-               &::after {
-                    position: absolute;
-                    left: 4px;
-                    top: 13px
-                }
-            }
-
-            .dropdown-menu {
-                border: 0;
-                border-radius: 0 0px 5px 6px;
-                 min-width: 123px;
-
-                .dropdown-item.active,
-                .dropdown-item {
-
-                    &:active {
-                        background-color: $main-color;
-                    }
-                }
-            }
+            left: 4px;
+            top: 13px
+          }
         }
 
-        .img-meal {
-            border-radius: 8px 8px 0 0;
-            object-fit: cover;
-            width: 10%;
-            height: 100%;
-        }
+        .dropdown-menu {
+          border: 0;
+          border-radius: 0 0px 5px 6px;
+          min-width: 123px;
 
-        .gramoli-logo {
-            // background-color: red;
-            position: relative;
-            display: flex;
-            width: 36px;
-            height: 36px;
-            margin-left: auto;
-            margin-top: -20px;
+          .dropdown-item.active,
+          .dropdown-item {
 
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                height: 100%;
-                width: 100%;
-                right: 20px;
-                bottom: 0;
-                display: block;
-                background: url(../imgs/logo.PNG);
-                background-size: cover;
-                background-color: #FFF;
-                border-radius: 50%;
-                border: 2px solid $main-color
+            &:active {
+              background-color: $main-color;
             }
-
+          }
         }
+      }
+
+    .img-meal {
+      border-radius: 8px 8px 0 0;
+      object-fit: cover;
+      width: 10%;
+      height: 100%;
     }
 
-    .meal-detail{
-        .meal-title {
-            .btn-select {
-                background-color: $main-color;
-                color: #FFF;
-            }
+    .gramoli-logo {
+      // background-color: red;
+      position: relative;
+      display: flex;
+      width: 36px;
+      height: 36px;
+      margin-left: auto;
+      margin-top: -20px;
 
-            .meal-name-en {
-                font-size: 18px;
-            }
-        }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        right: 20px;
+        bottom: 0;
+        display: block;
+        background: url(../imgs/logo.PNG);
+        background-size: cover;
+        background-color: #FFF;
+        border-radius: 50%;
+        border: 2px solid $main-color
+      }
     }
+  }
+
+  .meal-detail{
+    .meal-title {
+      .btn-select {
+        background-color: $main-color;
+        color: #FFF;
+      }
+
+      .meal-name-en {
+        font-size: 18px;
+      }
+    }
+  }
 }

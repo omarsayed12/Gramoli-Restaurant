@@ -99,7 +99,7 @@
     }
     ]
   });
-  
+
   $('.slider-days-en').slick({
     slidesToShow: 24,
     slidesToScroll: 10,

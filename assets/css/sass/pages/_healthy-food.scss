@@ -1,163 +1,164 @@
 /*start healthy ar*/
 .healthy {
-    padding: 60px 0;
+  padding: 60px 0;
 
-    .healthy-title {
-        position: relative;
-        background-image: url("../imgs/healthy3.JPEG");
-        background-size: cover;
-        width: 253px;
-        height: 155px;
-        border-radius: 8px;
-        @include box-shadow(1px 3px 5px 1px #0d0d0d99);
+  .healthy-title {
+    position: relative;
+    background-image: url("../imgs/healthy3.JPEG");
+    background-size: cover;
+    width: 253px;
+    height: 155px;
+    border-radius: 8px;
+    @include box-shadow(1px 3px 5px 1px #0d0d0d99);
 
-        &::before {
-            @extend .property-before;
-            background-color: #72a73e;
-            z-index: -1;
-            border-radius: 8px;
-        }
-
-        .healthy-name {
-            position: absolute;
-            bottom: 0;
-            color:#FFF;
-            padding-right: 10px;
-            padding-bottom: 5px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                width: 68px;
-                height: 3px;
-                background-color: #FFF
-            }
-        }
-
-        @media screen and (max-width: 569px)  {
-            width: 197px;
-            height: 130px;
-        }
+    &::before {
+      @extend .property-before;
+      background-color: #72a73e;
+      z-index: -1;
+      border-radius: 8px;
     }
 
-    .healthy-food-content {
-        .select-healthy-survival {
-            position: relative;
-            margin: 10px 10px  10px 0;
+    .healthy-name {
+      position: absolute;
+      bottom: 0;
+      color:#FFF;
+      padding-right: 10px;
+      padding-bottom: 5px;
 
-            .healthy-color {
-                color: $main-color;
-            }
-
-            &::before {
-                top: -2px;
-                height: 30px;
-                @extend .right-line-before
-            }
-        }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 68px;
+        height: 3px;
+        background-color: #FFF
+      }
     }
 
-    .health-monthly-lanch {
-        background-image: url("../imgs/healthy1.JPEG");
-        @extend .healthy-launch;
-
+    @media screen and (max-width: 569px)  {
+      width: 197px;
+      height: 130px;
     }
+}
 
-    .healthy-weekly-lanch {
-       background-image: url("../imgs/healthy1.JPEG");
-        @extend .healthy-launch;
+  .healthy-food-content {
+    .select-healthy-survival {
+      position: relative;
+      margin: 10px 10px  10px 0;
+
+      .healthy-color {
+        color: $main-color;
+      }
+
+      &::before {
+        top: -2px;
+        height: 30px;
+        @extend .right-line-before
+      }
     }
+  }
 
-    .health-tow-weakly-lanch {
-        background-image: url("../imgs/healthy3.JPEG");
-        @extend .healthy-launch;
-    }
+  .health-monthly-lanch {
+    background-image: url("../imgs/healthy1.JPEG");
+    @extend .healthy-launch;
 
-    .health-lanch {
-        position: relative;
-        border-radius: 8px;
-        border: 1px solid #f0eaea;
-        padding: 0 12px;
-        margin: 15px 0;
-        @include box-shadow(-2px 1px 5px 2px #0d0d0d0c);
-        @include transition(.5s);
-        &:hover {
-            @include transform(scale(1.02));
-            @include transform(translate(4px, -10px));
-            @include box-shadow(-1px 5px 15px 1px #00000091);
+  }
 
-        }
+  .healthy-weekly-lanch {
+    background-image: url("../imgs/healthy1.JPEG");
+    @extend .healthy-launch;
+  }
 
-        .health-lanch-content {
+  .health-tow-weakly-lanch {
+    background-image: url("../imgs/healthy3.JPEG");
+    @extend .healthy-launch;
+  }
+
+  .health-lanch {
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #f0eaea;
+    padding: 0 12px;
+    margin: 15px 0;
+    @include box-shadow(-2px 1px 5px 2px #0d0d0d0c);
+    @include transition(.5s);
+
+    &:hover {
+      @include transform(scale(1.02));
+      @include transform(translate(4px, -10px));
+      @include box-shadow(-1px 5px 15px 1px #00000091);
+
+      }
+
+      .health-lanch-content {
             height: 180px;
 
-            .health-lanch-option {
-                .many-days {
-                   display: inline-block;
-                   color: $main-color;
-                   margin: 10px 1px 13px 0;
-                   font-size: 19px;
-               }
+          .health-lanch-option {
+            .many-days {
+                display: inline-block;
+                color: $main-color;
+                margin: 10px 1px 13px 0;
+                font-size: 19px;
+              }
 
-               .health-lanch-name {
-                   font-size: 20px;
-               }
-            }
-            .healthy-lanch-details {
-                margin-top:65px;
+              .health-lanch-name {
+                font-size: 20px;
+              }
+          }
+          .healthy-lanch-details {
+              margin-top:65px;
 
-                @media screen and (max-width: 600px) {
-                    margin-top: 65px;
-                }
-                .healthy-lanch-price {
-                    color: $main-color;
-                }
-            }
-        }
+              @media screen and (max-width: 600px) {
+                margin-top: 65px;
+              }
+              .healthy-lanch-price {
+                color: $main-color;
+              }
+          }
+      }
 
-        .our-product-link {
-            @extend .click-link;
-        }
-    }
+      .our-product-link {
+        @extend .click-link;
+      }
+  }
 }
 /*end healthy ar*/
 
 /*start healthy en */
 
 .select-healthy-survival-en {
-    padding-left: 12px;
-    &::before {
-        left: 0;
-    }
+  padding-left: 12px;
+  &::before {
+    left: 0;
+  }
 }
 
 .healthy  {
 
-    .healthy-title-en {
-        background-image: url("../imgs/healthy3-en.JPEG") ;
+  .healthy-title-en {
+    background-image: url("../imgs/healthy3-en.JPEG") ;
 
-        .healthy-name-en {
-            padding-left: 10px;
-            &::before {
-                width: 128px;
-            }
+      .healthy-name-en {
+        padding-left: 10px;
+        &::before {
+            width: 128px;
         }
     }
-    .health-monthly-lanch-en {
-        background-image: url("../imgs/healthy2.-en.JPEG");
-        background-position: right top;
-    }
+  }
+  .health-monthly-lanch-en {
+    background-image: url("../imgs/healthy2.-en.JPEG");
+    background-position: right top;
+  }
 
-    .health-weekly-lanch-en {
-        background-image: url("../imgs/healthy3-en.JPEG");
-        background-position: right top;
-    }
+  .health-weekly-lanch-en {
+    background-image: url("../imgs/healthy3-en.JPEG");
+    background-position: right top;
+  }
 
-    .health-tow-weakly-lanch-en {
-        background-image: url("../imgs/healthy2.-en.JPEG");
-        background-position: right top;
+  .health-tow-weakly-lanch-en {
+    background-image: url("../imgs/healthy2.-en.JPEG");
+    background-position: right top;
 
-    }
+  }
 }
 /*end healthy en */
