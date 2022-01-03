@@ -684,6 +684,11 @@ table {
 .mealz-content .meal-detail .meal-title .meal-name-en {
   font-size: 18px;
 }
+@media screen and (max-width: 430px) {
+  .mealz-content .meal-detail .meal-title .meal-name-en {
+    font-size: 14px;
+  }
+}
 
 /*start footer */
 footer {

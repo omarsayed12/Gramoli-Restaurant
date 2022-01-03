@@ -136,6 +136,9 @@
 
       .meal-name-en {
         font-size: 18px;
+        @media screen and (max-width: 430px) {
+          font-size: 14px;
+        }
       }
     }
   }
