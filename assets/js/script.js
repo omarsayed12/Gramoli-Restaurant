@@ -1,5 +1,6 @@
   $('.responsive').slick({
     rtl: true,
+    arrows: false,
     pauseOnHover: true,
     autoplay: true,
     slidesToShow: 3,
@@ -65,6 +66,7 @@
   });
   $('.slider-days').slick({
     rtl: true,
+    arrows: false,
     slidesToShow: 24,
     slidesToScroll: 10,
     speed: 3000,
@@ -101,6 +103,7 @@
   });
 
   $('.slider-days-en').slick({
+    arrows: false,
     slidesToShow: 24,
     slidesToScroll: 10,
     speed: 3000,
@@ -157,3 +160,12 @@ window.addEventListener("scroll", () =>{
     : (header.style.marginTop = "0")
   })
 });
+
+
+// create pic a date
+$( function() {
+	$( "#datepicker" ).datepicker({
+		// dateFormat: "dd بدايه من يوم",
+		duration: "fast"
+	});
+} );

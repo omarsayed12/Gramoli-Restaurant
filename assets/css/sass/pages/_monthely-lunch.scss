@@ -1,4 +1,19 @@
+.contact-us {
+  .chat-contact {
+      border: 1px solid #dadada;
+      padding: 5px 7px;
+      border-radius: 5px;
+    .fas {
+      color: $main-color;
+    }
+  }
+}
+
 .total-days {
+
+  .lunch-work-title {
+    padding: 5px 0;
+  }
   .day {
     text-align: center;
     .day-ar {
