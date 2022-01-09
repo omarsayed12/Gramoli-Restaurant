@@ -1,0 +1,46 @@
+.food-menu{
+
+  .food-list-name {
+    position: relative;
+
+    &::before {
+      @extend .right-line-before;
+      height: 26px;
+    }
+  }
+
+  .food-list-name-en {
+    &::before {
+      left: -13px;
+      height: 26px;
+    }
+  }
+
+  .btn-select {
+     @extend .bg-color;
+  }
+}
+
+.card-menu {
+  min-height: 154px;
+}
+
+.img-meal,
+.img-meal-size{
+  object-fit: cover;
+}
+
+.nav-pills  .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: $main-color;
+  padding: 5px 30px;
+}
+
+.list-menue-content {
+  color: #000;
+  font-size: 18px;
+
+  &:hover {
+    color: #000;
+  }
+}

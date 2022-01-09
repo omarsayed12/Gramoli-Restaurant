@@ -25,7 +25,7 @@
   <div class="upper-nav">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 text-start align-self-center">
+        <div class="col-md-4 d-flex text-start align-items-center align-self-center justify-content-between">
           <div class="social-media-icon d-flex">
             <a href="#" class="nav-link"><i class="fab fa-facebook-f icon-contact"></i></a>
             <a href="#" class="nav-link"> <i class="fab fa-twitter icon-contact"></i></a>
@@ -33,6 +33,19 @@
             <a href="#" class="nav-link"><i class="fab fa-snapchat-ghost icon-contact"></i></a>
             <a href="#" class="nav-link"><i class="fab fa-instagram icon-contact"></i></a>
           </div>
+          <!-- cart -->
+          <div class="cart-btn d-flex align-items-center">
+            <a href="#" class="cart nav-link">
+              <span name="basket" class="cart-quantity">0</span>
+              <i class="fas fa-shopping-cart cart-icon"></i>
+            </a>
+            <!-- cart -->
+            <div class="display-cart shadow">
+              <span id="content-cart">اسم الصنف</span>
+              <div class="content-name"></div>
+            </div>
+          </div>
+          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
         </div>
         <div class="col-md-8 align-self-center text-end">
           <div class="contact d-flex justify-content-end">
@@ -40,7 +53,6 @@
               <span class="contact-tel">968578547885+</span>
               <i class="fas fa-phone-alt icon-contact"></i>
             </a>
-
             <a href="#" class="nav-link contact-res">
               <span class="title">Riy Alive King Saud University</span>
               <i class="fas fa-map-marker-alt icon-contact"></i>
@@ -88,7 +100,7 @@
     <!-- start contact us  -->
     <div class="container">
       <div class="contact-us d-flex justify-content-between align-items-center">
-        <a href="#" class="d-flex align-items-baseline nav-link link-dark">
+        <a href="./mealz-ar.html" class="d-flex align-items-baseline nav-link link-dark">
           <i class="fas fa-arrow-right"></i>
           <h5 class="select-mealz d-flex align-items-center ms-2">اختار وجباتك</h5>
         </a>
@@ -318,7 +330,7 @@
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart">اختر الوجبه</button>
                   <h5 class="meal-name">
                     شاورما دجاج مع بطاطس
                   </h5>
@@ -338,7 +350,7 @@
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart">اختر الوجبه</button>
                   <h5 class="meal-name">
                     شاورما دجاج مع بطاطس
                   </h5>
@@ -358,7 +370,7 @@
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart">اختر الوجبه</button>
                   <h5 class="meal-name">
                     شاورما دجاج مع بطاطس
                   </h5>
@@ -378,7 +390,7 @@
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart">اختر الوجبه</button>
                   <h5 class="meal-name">
                     شاورما دجاج مع بطاطس
                   </h5>
@@ -398,7 +410,7 @@
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart">اختر الوجبه</button>
                   <h5 class="meal-name">
                     شاورما دجاج مع بطاطس
                   </h5>
@@ -418,7 +430,7 @@
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart">اختر الوجبه</button>
                   <h5 class="meal-name">
                     شاورما دجاج مع بطاطس
                   </h5>
@@ -509,8 +521,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <!-- Slick Carousel jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -518,8 +528,16 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-  <script src="./assets/js/slick-slider.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/slick-slider.js"></script>
+  <script>
+    $(function () {
+      $("#datepicker").datepicker({
+        // dateFormat: "dd بدايه من يوم",
+        duration: "fast"
+      });
+    });
+  </script>
 </body>
 
 </html>

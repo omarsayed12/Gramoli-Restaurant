@@ -1,0 +1,99 @@
+.form-container {
+  min-width: 400px;
+  max-width: 600px;
+  margin: 50px auto;
+
+  .btn-log {
+    background-color: $main-color;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+  }
+
+  .btn-register {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  p {
+    cursor: pointer;
+  }
+
+  #lt {
+  background-color: $main-color;
+  }
+}
+
+
+.form-sub {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-color: #f9f9f9;
+  border: 2px solid #ffffff;
+
+  .input-control{
+    display: block;
+    margin: 2px auto;
+    padding: 5px;
+    font-size: 18px;
+    color: $main-color;
+  }
+
+  .input-content {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+}
+
+
+ .form-header {
+    color: #1a1a1a;
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+    #login {
+    visibility: visible;
+    }
+
+  #forgot h3 {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+    .forget-pass {
+      text-align: center;
+      color: #1a1a1a;
+      font-size: 19px;
+      padding: 14px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #ffc93a;
+    }
+}
+
+.alert-forgot,
+.alert-forgot-pass,
+.alert-forgot-reges,
+.alert-forgot-regesPass,
+.alert-forgot-resRegesPass,
+.alert-forgot-password {
+  padding: 0;
+  color: #b63c3c;
+  height: 24px;
+  min-height: 23px;
+  font-size: 14px;
+  // visibility: hidden;
+}

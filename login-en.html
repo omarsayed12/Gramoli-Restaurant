@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./assets/vendor/all.min.css">
   <!-- style css -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Mealz</title>
+  <title>log in</title>
 </head>
 
 <body>
@@ -32,21 +32,8 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 d-flex text-start align-items-center align-self-center justify-content-between">
-          <!-- cart -->
-          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
-          <div class="cart-btn d-flex align-items-center">
-            <a href="#" class="cart nav-link">
-              <span name="basket" class="cart-quantity">0</span>
-              <i class="fas fa-shopping-cart cart-icon"></i>
-            </a>
-            <!-- cart -->
-            <div class="display-cart shadow">
-              <span id="content-cart">اسم الصنف</span>
-              <div class="content-name"></div>
-            </div>
-          </div>
-          <div class="social-media-icon d-flex">
+        <div class="col-md-4 align-self-center">
+          <div class="social-media-icon d-flex justify-content-end">
             <a href="#" class="nav-link"><i class="fab fa-facebook-f icon-contact"></i></a>
             <a href="#" class="nav-link"> <i class="fab fa-twitter icon-contact"></i></a>
             <a href="#" class="nav-link"><i class="fab fa-whatsapp icon-contact"></i></a>
@@ -83,7 +70,7 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link " href="./mealz-ar.html">
+            <a class="nav-link " href="./login-ar.html">
               <img src="./assets/imgs/s-arabia.JPEG" class="mb-1" alt="Arabic translate icon">
             </a>
           </li>
@@ -92,144 +79,83 @@
   </nav>
   <!-- end nav -->
   <main>
-    <!-- start section healthy -->
-    <section class="mealz py-5" id="header">
-      <section class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div class="dropdown">
-                    <a class="btn btn-toggle dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      chef 's Pick
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">mohamed's chef</a></li>
-                      <li><a class="dropdown-item" href="#">Alaa's chef</a></li>
-                    </ul>
-                  </div>
-                  <span class="kcal">450 Calories</span>
+    <!-- start food-menu -->
+    <!-- start login -->
+    <!-- login and register button -->
+    <section class="form-container">
+      <div class="container">
+        <form action="./index.html">
+          <div class="row">
+            <div class="col-6 text-center">
+              <button id="btnLogin" class="btn btn-log shadow">Log in</button>
+            </div>
+            <div class="col-6 text-center">
+              <button id="btnRregister" class="btn btn-register shadow">Register</button>
+            </div>
+          </div>
+          <div class="form-sub shadow rounded-3 mt-4 d-flex align-items-center">
+            <!-- start sign in -->
+            <div id="login" class="input-content">
+              <div class="row justify-content-center">
+                <h3 class="sign-in form-header">Sign in</h3>
+                <div class="col-10">
+                  <input id="logMail" class="form-control input-control" type="email" placeholder="Email" required />
+                  <p class="alert-forgot p-0 m-0"></p>
+                </div>
+                <div class="col-10">
+                  <input id="logPass" class="form-control input-control" type="password" placeholder="Password"
+                    required />
+                  <p class="alert-forgot-pass p-0 m-0"></p>
+
+                </div>
+                <div class="col-md-5">
+                  <button id="submit" class="btn btn-submit" type="submit">Log In</button>
+                </div>
+                <button class=" btn forget-pass" id="forgetPass">Forget Password?</button>
+              </div>
+            </div>
+            <!-- start register -->
+            <div id="register" class="input-content">
+              <h3 class="register form-header">Register</h3>
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <input id="reMail" class="form-control input-control" type="email" placeholder="Email" required />
+                  <p class="alert-forgot-reges p-0 m-0"></p>
+                </div>
+                <div class="col-10">
+                  <input id="repass" class="form-control input-control" type="password" placeholder="Password"
+                    required />
+                  <p class="alert-forgot-regesPass p-0 m-0"></p>
+                </div>
+                <div class="col-10">
+                  <input id="rePassPlaceholder" class="form-control input-control" type="password"
+                    placeholder="Re write Password" required />
+                  <p class="alert-forgot-resRegesPass  p-0 m-0"></p>
+                </div>
+                <div class="col-md-5">
+                  <button class="btn btn-submit" id="regSubmit" type="submit">Register</button>
                 </div>
               </div>
-              <div class="meal-detail">
-                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select add-to-cart">Select</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
-                  </h5>
+            </div>
+            <div id="forgot" class="input-content">
+              <h3 class="forget-pass">Forgot Password</h3>
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <input id="forgetMail" class="form-control input-control" type="email" placeholder="Email" required />
+                  <p class="alert-forgot-password p-0 m-0"></p>
+                </div>
+                <div class="col-md-5">
+                  <button id="forgetPass" class="btn btn-submit" type="submit">end Code</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div></div>
-                  <span class="kcal">450 Calories</span>
-                </div>
-              </div>
-              <div class="meal-detail">
-                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select add-to-cart">Select</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div></div>
-                  <span class="kcal">450 Calories</span>
-                </div>
-              </div>
-              <div class="meal-detail">
-                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select add-to-cart">Select</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div></div>
-                  <span class="kcal">450 Calories</span>
-                </div>
-              </div>
-              <div class="meal-detail">
-                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select add-to-cart">Select</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div></div>
-                  <span class="kcal">450 Calories</span>
-                </div>
-              </div>
-              <div class="meal-detail">
-                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select add-to-cart">Select</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div></div>
-                  <span class="kcal">450 Calories</span>
-                </div>
-              </div>
-              <div class="meal-detail">
-                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select add-to-cart">Select</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
+        </form>
+      </div>
+      <!-- end  login -->
     </section>
-    <!-- end section healthy-food -->
+    <!-- end login -->
+    <!-- end food-menu -->
   </main>
   <!-- start footer -->
   <footer>
@@ -308,11 +234,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <!-- Slick Carousel jquery -->
-  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script> -->
-  <script src="./assets/js/script.js"></script>
-
+  <script src="./assets/js/log-in.js"></script>
 </body>
 
 </html>

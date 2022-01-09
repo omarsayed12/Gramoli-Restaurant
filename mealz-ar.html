@@ -20,7 +20,7 @@
   <div class="upper-nav">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 text-start align-self-center">
+        <div class="col-md-4 d-flex text-start align-items-center align-self-center justify-content-between">
           <div class="social-media-icon d-flex">
             <a href="#" class="nav-link"><i class="fab fa-facebook-f icon-contact"></i></a>
             <a href="#" class="nav-link"> <i class="fab fa-twitter icon-contact"></i></a>
@@ -28,6 +28,15 @@
             <a href="#" class="nav-link"><i class="fab fa-snapchat-ghost icon-contact"></i></a>
             <a href="#" class="nav-link"><i class="fab fa-instagram icon-contact"></i></a>
           </div>
+          <!-- cart -->
+          <div class="cart-btn d-flex align-items-center">
+            <a href="#" class=" nav-link">
+              <i class="fas fa-shopping-cart cart-icon"></i>
+            </a>
+          </div>
+          <ul id="buyItems" class="cart list-unstyled">
+          </ul>
+          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
         </div>
         <div class="col-md-8 align-self-center text-end">
           <div class="contact d-flex justify-content-end">
@@ -35,7 +44,6 @@
               <span class="contact-tel">968578547885+</span>
               <i class="fas fa-phone-alt icon-contact"></i>
             </a>
-
             <a href="#" class="nav-link contact-res">
               <span class="title">Riy Alive King Saud University</span>
               <i class="fas fa-map-marker-alt icon-contact"></i>
@@ -102,12 +110,40 @@
                   </div>
                   <span class="kcal">450 سعر حراري</span>
                 </div>
+                <div class="d-flex justify-content-between px-4">
+                  <h6>السعر</h6>
+                  <h6><span class="price-value">10</span></h6>
+                </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart" data-product-id="1">اختر الوجبه</button>
                   <h5 class="meal-name">
                     شاورما دجاج مع بطاطس
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-4">
+            <div class="mealz-content">
+              <div class="meal-img">
+                <img src="./assets/imgs/meal2.JPEG" class="w-100 img-meal" alt="meal1">
+                <span class="gramoli-logo"></span>
+                <div class="select-chef">
+                  <div></div>
+                  <span class="kcal">450 سعر حراري</span>
+                </div>
+                <div class="d-flex justify-content-between px-4">
+                  <h6>السعر</h6>
+                  <h6><span class="price-value">50</span></h6>
+                </div>
+              </div>
+              <div class="meal-detail">
+                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-select add-to-cart" data-product-id="2">اختر الوجبه</button>
+                  <h5 class="meal-name">
+                    شاورما لحم مع بطاطس
                   </h5>
                 </div>
               </div>
@@ -122,12 +158,16 @@
                   <div></div>
                   <span class="kcal">450 سعر حراري</span>
                 </div>
+                <div class="d-flex justify-content-between px-4">
+                  <h6>السعر</h6>
+                  <h6><span class="price-value">18</span></h6>
+                </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart" data-product-id="3">اختر الوجبه</button>
                   <h5 class="meal-name">
-                    شاورما دجاج مع بطاطس
+                    فته دجاج مع بطاطس
                   </h5>
                 </div>
               </div>
@@ -136,18 +176,22 @@
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
               <div class="meal-img">
-                <img src="./assets/imgs/meal3.JPEG" class="w-100 img-meal" alt="meal1">
+                <img src="./assets/imgs/mandi.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
                   <span class="kcal">450 سعر حراري</span>
                 </div>
+                <div class="d-flex justify-content-between px-4">
+                  <h6>السعر</h6>
+                  <h6><span class="price-value">80</span></h6>
+                </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart" data-product-id="4">اختر الوجبه</button>
                   <h5 class="meal-name">
-                    شاورما دجاج مع بطاطس
+                    مندي دجاج مع بطاطس
                   </h5>
                 </div>
               </div>
@@ -156,18 +200,22 @@
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
               <div class="meal-img">
-                <img src="./assets/imgs/meal3.JPEG" class="w-100 img-meal" alt="meal1">
+                <img src="./assets/imgs/chicken2.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
                   <span class="kcal">450 سعر حراري</span>
                 </div>
+                <div class="d-flex justify-content-between px-4">
+                  <h6>السعر</h6>
+                  <h6><span class="price-value">100</span></h6>
+                </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart" data-product-id="5">اختر الوجبه</button>
                   <h5 class="meal-name">
-                    شاورما دجاج مع بطاطس
+                    وجبه دجاج ماندي مع بطاطس
                   </h5>
                 </div>
               </div>
@@ -176,36 +224,20 @@
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
               <div class="meal-img">
-                <img src="./assets/imgs/meal3.JPEG" class="w-100 img-meal" alt="meal1">
+                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
                   <span class="kcal">450 سعر حراري</span>
                 </div>
-              </div>
-              <div class="meal-detail">
-                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
-                  <h5 class="meal-name">
-                    شاورما دجاج مع بطاطس
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal3.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div></div>
-                  <span class="kcal">450 سعر حراري</span>
+                <div class="d-flex justify-content-between px-4">
+                  <h6>السعر</h6>
+                  <h6><span class="price-value">10</span></h6>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select">اختر الوجبه</button>
+                  <button type="button" class="btn btn-select add-to-cart" data-product-id="6">اختر الوجبه</button>
                   <h5 class="meal-name">
                     شاورما دجاج مع بطاطس
                   </h5>
@@ -296,8 +328,6 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <!-- Slick Carousel jquery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

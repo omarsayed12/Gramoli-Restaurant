@@ -6,8 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
-    integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- slick slider links-->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./assets/vendor/all.min.css">
   <!-- style css -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>tow Weekly healthy work lunch</title>
+  <title>Monthely healthy work lunch</title>
 </head>
 
 <body>
@@ -37,8 +37,21 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 align-self-center">
-          <div class="social-media-icon d-flex justify-content-end">
+        <div class="col-md-4 d-flex text-start align-items-center align-self-center justify-content-between">
+          <!-- cart -->
+          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
+          <div class="cart-btn d-flex align-items-center">
+            <a href="#" class="cart nav-link">
+              <span name="basket" class="cart-quantity">0</span>
+              <i class="fas fa-shopping-cart cart-icon"></i>
+            </a>
+            <!-- cart -->
+            <div class="display-cart shadow">
+              <span id="content-cart">اسم الصنف</span>
+              <div class="content-name"></div>
+            </div>
+          </div>
+          <div class="social-media-icon d-flex">
             <a href="#" class="nav-link"><i class="fab fa-facebook-f icon-contact"></i></a>
             <a href="#" class="nav-link"> <i class="fab fa-twitter icon-contact"></i></a>
             <a href="#" class="nav-link"><i class="fab fa-whatsapp icon-contact"></i></a>
@@ -53,7 +66,7 @@
   <!-- start nav -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white p-0" id="fixed-nav">
     <div class="container">
-      <a class="navbar-brand text-end" href="#">
+      <a class="navbar-brand" href="#">
         <img src="./assets/imgs/brand-logo.JPEG" class="w-25" alt="Gramoli Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -87,13 +100,13 @@
     <!-- start contact us  -->
     <div class="container">
       <div class="contact-us d-flex justify-content-between align-items-center">
-        <a href="#" class="chat-contact nav-link link-dark">
+        <a href="./mealz-en.html" class="d-flex align-items-baseline nav-link link-dark">
+          <i class="fas fa-arrow-left"></i>
+          <h5 class="select-mealz d-flex align-items-center ms-2">choose your mealz</h5>
+        </a>
+        <a href="#" class="chat-contact nav-link link-dark me-3">
           Help
           <i class="fas fa-comment-dots"></i>
-        </a>
-        <a href="#" class="d-flex align-items-baseline nav-link link-dark">
-          <h5 class="select-mealz d-flex align-items-center ms-2">choose your mealz</h5>
-          <i class="fas fa-arrow-right"></i>
         </a>
       </div>
       <div class="date-content d-flex justify-content-between pt-5 px-2">
@@ -444,7 +457,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-md-center">
+        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-lg-center">
           <div class="list-content-en">
             <h5 class="title title-en h4">Follow us</h5>
             <div class="social-media-icon d-flex">
@@ -466,7 +479,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-md-center">
+        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-lg-center">
           <div class="list-content-en">
             <h5 class="title title-en h4">Contact</h5>
             <ul class="links-contact links list-unstyled p-0">
@@ -483,7 +496,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-3 d-flex justify-content-md-center">
+        <div class="col-md-12 col-lg-3 my-3 d-flex justify-content-lg-center">
           <div class="list-content-en">
             <h5 class="title title-en h4">Property</h5>
             <ul class="private-condetion links list-unstyled p-0 m-0">
@@ -516,6 +529,14 @@
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/slick-slider.js"></script>
+  <script>
+    $(function () {
+      $("#datepicker").datepicker({
+        // dateFormat: "dd بدايه من يوم",
+        duration: "fast"
+      });
+    });
+  </script>
 </body>
 
 </html>

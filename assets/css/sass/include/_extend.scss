@@ -41,10 +41,9 @@
 .right-line-before {
     content: "";
     position: absolute;
-    right: -11px;
-    width: 5px;
+    right: -13px;
+    width: 8px;
     background-color: $main-color;
-
 }
 
 .healthy-launch {
@@ -59,4 +58,9 @@
     left: 0;
     bottom: 0;
     z-index: 99999;
+}
+
+.line-height-font {
+    line-height: 2rem;
+	font-size: 0.875rem;
 }

@@ -1,8 +1,10 @@
 .contact-us {
+
   .chat-contact {
-      border: 1px solid #dadada;
-      padding: 5px 7px;
-      border-radius: 5px;
+    border: 1px solid #dadada;
+    padding: 5px 7px;
+    border-radius: 5px;
+
     .fas {
       color: $main-color;
     }
@@ -16,10 +18,12 @@
   }
   .day {
     text-align: center;
+
     .day-ar {
       color: #222;
       padding-right: 6px;
     }
+
     .day-num {
       border-radius: 50%;
       width: 30px;
@@ -47,30 +51,33 @@
     position: relative;
 
     .select-chef {
+      position: absolute;
       display: flex;
       justify-content: space-between;
       align-self: center;
-      position: absolute;
       top: 10px;
       padding: 0 10px;
       width: 100%;
+
       .kcal {
         font-size: 15px;
         border-radius: 4px;
         background-color: #ffbd55;
         padding: 3px 10px
         }
+
         .btn-toggle {
-          background-color: $main-color;
-          color: #FFF;
+          @extend .bg-color;
           padding: 3px 18px;
 
           &:focus {
-              box-shadow: none;
-              outline: 0;
+            box-shadow: none;
+            outline: 0;
           }
         }
+
         .dropdown-toggle {
+
           &::after {
             position: absolute;
             left: 4px;
@@ -101,7 +108,6 @@
     }
 
     .gramoli-logo {
-      // background-color: red;
       position: relative;
       display: flex;
       width: 36px;
@@ -128,14 +134,16 @@
   }
 
   .meal-detail{
+
     .meal-title {
+
       .btn-select {
-        background-color: $main-color;
-        color: #FFF;
+        @extend .bg-color;
       }
 
       .meal-name-en {
         font-size: 18px;
+
         @media screen and (max-width: 430px) {
           font-size: 14px;
         }
@@ -143,3 +151,4 @@
     }
   }
 }
+

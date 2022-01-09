@@ -1,10 +1,12 @@
 @import "./include/font.scss";
 @import "./include/variable.scss";
-@import "./include/global";
 @import "./include/extend";
 @import "./include/mixin";
+@import "./include/global";
 @import "./pages/header";
 @import "./pages/home-page";
 @import "./pages/healthy-food";
 @import "./pages/monthely-lunch";
+@import "./pages/menu";
+@import "./pages/login";
 @import "./pages/footer";

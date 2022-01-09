@@ -1,39 +1,97 @@
 
 /*start upper nav*/
 .upper-nav {
+  position: relative;
   background-color: $main-color;
+  z-index: 9999;
 
-  .icon-contact {
-      font-size: $font-size-icon;
-      color: #FFF;
-      padding-right: 2px;
-      @include transition(.4s);
+// cart style
 
-      &:hover{
-          @include transform(scale(1.1));
-          color: #ebe8e8;
-      }
+ .logo-nav {
+    background-color: #FFF;
+    width: 30px;
+    border-radius: 50px;
+
+    @media screen and (max-width: 596px)  {
+      display: none;
+    }
   }
+
+// cart style
+  .cart-btn {
+    .cart-icon {
+      color: #FFF
+    }
+  }
+.cart {
+  width: 314px;
+  min-height: 315px;
+  top: 41px;
+  position: absolute;
+  right: 153px;
+  background: rgb(253, 253, 253);
+  border: 1px solid #f3f3f3;
+  padding: 20px;
+  color: $main-color;
+  display: none;
+
+  @media screen and (max-width: 370px) {
+    width: 279px;
+    right: 24px;
+    top: 30px;
+  }
+
+  @media screen and (min-width: 370.9px) and (max-width: 491px) {
+    width: 313px;
+    right: 32px;
+    top: 32px;
+  }
+
+  .buyItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $main-color;
+    padding: 5px 0;
+    .img-product {
+      object-fit: contain;
+      width: 91px !important;
+      align-self: baseline;
+    }
+  }
+
+}
+  .icon-contact {
+    font-size: $font-size-icon;
+    color: #FFF;
+    padding-right: 2px;
+    @include transition(.4s);
+
+    &:hover{
+        @include transform(scale(1.1));
+        color: #ebe8e8;
+    }
+  }
+
   .contact-res {
-      @include transition(.4s);
+    @include transition(.4s);
 
-      .contact-tel, .title {
-          color: #FFF;
-          font-size: 17px;
-      }
+    .contact-tel, .title {
+      color: #FFF;
+      font-size: 17px;
+    }
 
-      &:hover {
-            @include transform(scale(1.01))
-      }
+    &:hover {
+      @include transform(scale(1.01))
+    }
   }
 
   /* media Query*/
-
   @media screen and (max-width: 769.9px) {
     .social-media-icon {
       justify-content: center !important;
-
     }
+
     .contact {
       display: block !important;
       text-align: center;;
@@ -47,8 +105,8 @@
   .navbar-nav {
     .nav-link.active,
     .show>.nav-link {
-        @extend .bg-color;
-        font-size: $main-fot-size;
+      @extend .bg-color;
+      font-size: $main-fot-size;
     }
 
     .nav-link {
@@ -68,12 +126,12 @@
         @extend .bg-color;
       }
     }
+
     :last-child {
       .nav-link{
         background-color: transparent;
       }
     }
-
   }
 
   .navbar-toggler {
@@ -110,15 +168,15 @@
         .nav-link{
           border-top: 1px solid $main-color;
           border-radius: 0
+        }
       }
     }
-    }
   }
+
 }
 
 // add style to navbar when scroll
 .sticky {
   @extend .sticky;
 }
-
 /*end navbar */
