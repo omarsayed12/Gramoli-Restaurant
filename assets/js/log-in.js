@@ -17,6 +17,7 @@ let btnSubmit = document.getElementById("submit");
 // form register variable define
 let registerForm = document.getElementById("register");
 let emailReg = document.getElementById("reMail");
+let numberTel = document.querySelector('#phone');
 let passwordReg = document.getElementById("repass");
 let passwordRetype = document.getElementById("rePassPlaceholder");
 let regSubmit = document.getElementById("regSubmit");
@@ -105,26 +106,33 @@ regSubmit.addEventListener("click", (event) => {
   event.preventDefault();
 
   var validForm = false;
-  if(emailReg.value  !== "" && passwordReg.value !== ""&&
+  if(emailReg.value  !== "" &&
+    passwordReg.value !== ""&&
+    numberTel.value !== "" &&
     passwordRetype.value !== "" &&
     passwordReg.value === passwordRetype.value &&
     emailArray.indexOf(emailReg) !== -1) {
-
       validForm = true;
   }
 
   if(validForm) {
     localStorage.setItem("email", emailReg.value);
     localStorage.setItem("pass", passwordReg.value);
+    localStorage.setItem("number", numberTel.value);
     localStorage.setItem("passRetype", passwordRetype.value);
     window.location.href = "../index.html";
   }
 
   if(document.documentElement.lang === "ar") {
     if (emailReg.value === ""){
-    let alertForgotReges = document.querySelector(".alert-forgot-reges");
-    alertForgotReges.textContent = "من فضلك ادخل البريد لالكتروني";
+      let alertForgotReges = document.querySelector(".alert-forgot-reges");
+      alertForgotReges.textContent = "من فضلك ادخل البريد لالكتروني";
       return ;
+
+    } else if(numberTel.value === "") {
+      let alertForgotTel = document.querySelector(".alert-forgot-tel");
+      alertForgotTel.textContent = "ادخل رقم الجوال";
+      return;
     }
     else if (passwordReg.value === ""){
       let alertForgotPass = document.querySelector(".alert-forgot-regesPass");
@@ -151,6 +159,10 @@ regSubmit.addEventListener("click", (event) => {
       let alertForgotReges = document.querySelector(".alert-forgot-reges");
       alertForgotReges.textContent = "Please enter your email";
         return ;
+    }else if(numberTel.value === "") {
+       let alertForgotTel = document.querySelector(".alert-forgot-tel");
+      alertForgotTel.textContent = "enter mobile number";
+      return;
     }else if (passwordReg.value === ""){
       let alertForgotPass = document.querySelector(".alert-forgot-regesPass");
       alertForgotPass.textContent = "enter password"

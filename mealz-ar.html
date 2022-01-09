@@ -18,10 +18,10 @@
 <body>
   <!--Start upper nav-->
   <div class="upper-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 d-flex text-start align-items-center align-self-center justify-content-between">
-          <div class="social-media-icon d-flex">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-4 d-flex text-start align-items-center align-self-center justify-content-center">
+          <div class="social-media-icon d-flex justify-content-center">
             <a href="#" class="nav-link"><i class="fab fa-facebook-f icon-contact"></i></a>
             <a href="#" class="nav-link"> <i class="fab fa-twitter icon-contact"></i></a>
             <a href="#" class="nav-link"><i class="fab fa-whatsapp icon-contact"></i></a>
@@ -34,11 +34,10 @@
               <i class="fas fa-shopping-cart cart-icon"></i>
             </a>
           </div>
-          <ul id="buyItems" class="cart list-unstyled">
+          <ul id="buyItems" class="cart disCart list-unstyled">
           </ul>
-          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
         </div>
-        <div class="col-md-8 align-self-center text-end">
+        <div class="col-lg-6 col-md-9 align-self-center">
           <div class="contact d-flex justify-content-end">
             <a href="#" class="nav-link contact-res">
               <span class="contact-tel">968578547885+</span>
@@ -49,6 +48,9 @@
               <i class="fas fa-map-marker-alt icon-contact"></i>
             </a>
           </div>
+        </div>
+        <div class="col-md-1 col-sm-1 col-1 d-flex align-items-center justify-content-center d-sm-none d-md-flex">
+          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
         </div>
       </div>
     </div>
@@ -277,7 +279,7 @@
                 <i class="fab fa-whatsapp link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
-                <i class="fab fa-google-plus-g link-dark icon-contact-foo"></i>
+                <i class="fab fa-snapchat-ghost link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
                 <i class="fab fa-instagram link-dark icon-contact-foo"></i>
@@ -285,24 +287,24 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-2 d-flex d-flex justify-content-lg-centerr">
+        <div class="col-md-12 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
           <div class="list-content">
             <h5 class="title h4">الاتصال</h5>
             <ul class="links-contact links list-unstyled p-0 m-0">
               <li class="link-title d-inline-block">
                 <a href="#" class="nav-link link-name-content p-0">
-                  <span class="link-dark">Email: office-res@gramoli.com</span>
+                  <span class="link-dark pe-1">office-res@gramoli.com</span>
                   <i class="fas fa-envelope link-dark"></i>
                 </a>
                 <a href="#" class="nav-link link-name-content p-0">
-                  <span class="link-dark">968578547885+</span>
+                  <span class="link-dark pe-1">968578547885+</span>
                   <i class="fas fa-phone-alt link-dark"></i>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-3 d-flex d-flex justify-content-lg-centerer">
+        <div class="col-md-12 col-lg-3 my-3 d-flex d-flex justify-content-lg-center">
           <div class="list-content">
             <h5 class="title h4">الملكيه</h5>
             <ul class="private-condetion links list-unstyled m-0">
@@ -327,7 +329,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <!-- Slick Carousel jquery -->
+  <script src="./assets/js/cart.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

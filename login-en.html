@@ -18,9 +18,12 @@
 <body>
   <!--Start upper nav-->
   <div class="upper-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 align-self-center">
+    <div class="container-fluid px-5">
+      <div class="row justify-content-center">
+        <div class="col-md-1 col-sm-1 col-1 d-flex align-items-center justify-content-center d-sm-none d-md-flex">
+          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-8 align-self-center justify-content-center">
           <div class="contact d-flex">
             <a href="#" class="nav-link contact-res">
               <i class="fas fa-map-marker-alt icon-contact"></i>
@@ -32,8 +35,8 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 align-self-center">
-          <div class="social-media-icon d-flex justify-content-end">
+        <div class="col-md-5 align-self-center">
+          <div class="social-media-icon d-flex justify-content-center ms-5">
             <a href="#" class="nav-link"><i class="fab fa-facebook-f icon-contact"></i></a>
             <a href="#" class="nav-link"> <i class="fab fa-twitter icon-contact"></i></a>
             <a href="#" class="nav-link"><i class="fab fa-whatsapp icon-contact"></i></a>
@@ -82,7 +85,7 @@
     <!-- start food-menu -->
     <!-- start login -->
     <!-- login and register button -->
-    <section class="form-container">
+    <section class="form-container" id="header">
       <div class="container">
         <form action="./index.html">
           <div class="row">
@@ -99,13 +102,14 @@
               <div class="row justify-content-center">
                 <h3 class="sign-in form-header">Sign in</h3>
                 <div class="col-10">
-                  <input id="logMail" class="form-control input-control" type="email" placeholder="Email" required />
-                  <p class="alert-forgot p-0 m-0"></p>
+                  <input id="logMail" class="form-control input-control" type="email" name="logEmail"
+                    placeholder="Email" />
+                  <p class="alert-forgot alert-forgot-filed p-0 m-0"></p>
                 </div>
                 <div class="col-10">
-                  <input id="logPass" class="form-control input-control" type="password" placeholder="Password"
-                    required />
-                  <p class="alert-forgot-pass p-0 m-0"></p>
+                  <input id="logPass" class="form-control input-control" type="password" name="logPassword"
+                    placeholder="Password" />
+                  <p class="alert-forgot-pass alert-forgot-filed p-0 m-0"></p>
 
                 </div>
                 <div class="col-md-5">
@@ -119,18 +123,23 @@
               <h3 class="register form-header">Register</h3>
               <div class="row justify-content-center">
                 <div class="col-10">
-                  <input id="reMail" class="form-control input-control" type="email" placeholder="Email" required />
-                  <p class="alert-forgot-reges p-0 m-0"></p>
+                  <input id="reMail" class="form-control input-control" type="email" name="email" placeholder="Email" />
+                  <p class="alert-forgot-reges alert-forgot-filed p-0 m-0"></p>
                 </div>
                 <div class="col-10">
-                  <input id="repass" class="form-control input-control" type="password" placeholder="Password"
-                    required />
-                  <p class="alert-forgot-regesPass p-0 m-0"></p>
+                  <input type="tel" id="phone" class="form-control input-control text-start" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Mobile number" required>
+                  <p class="alert-forgot-tel alert-forgot-filed p-0 m-0"></p>
                 </div>
                 <div class="col-10">
-                  <input id="rePassPlaceholder" class="form-control input-control" type="password"
-                    placeholder="Re write Password" required />
-                  <p class="alert-forgot-resRegesPass  p-0 m-0"></p>
+                  <input id="repass" class="form-control input-control" type="password" name="password"
+                    placeholder="Password" />
+                  <p class="alert-forgot-regesPass alert-forgot-filed p-0 m-0"></p>
+                </div>
+                <div class="col-10">
+                  <input id="rePassPlaceholder" class="form-control input-control" name="reWritePass" type="password"
+                    placeholder="Re write Password" />
+                  <p class="alert-forgot-resRegesPass alert-forgot-filed p-0 m-0"></p>
                 </div>
                 <div class="col-md-5">
                   <button class="btn btn-submit" id="regSubmit" type="submit">Register</button>
@@ -141,8 +150,9 @@
               <h3 class="forget-pass">Forgot Password</h3>
               <div class="row justify-content-center">
                 <div class="col-10">
-                  <input id="forgetMail" class="form-control input-control" type="email" placeholder="Email" required />
-                  <p class="alert-forgot-password p-0 m-0"></p>
+                  <input id="forgetMail" class="form-control input-control" type="email" name="forgotEmail"
+                    placeholder="Email" />
+                  <p class="alert-forgot-password alert-forgot-filed p-0 m-0"></p>
                 </div>
                 <div class="col-md-5">
                   <button id="forgetPass" class="btn btn-submit" type="submit">end Code</button>
@@ -161,7 +171,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-lg-3 my-2">
+        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-lg-center">
           <div class="who-we">
             <div class="list-content-en">
               <h5 class="title title-en h4">Gramoli</h5>
@@ -172,11 +182,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-lg-center">
+        <div class="col-md-12 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
           <div class="list-content-en">
             <h5 class="title title-en h4">Follow us</h5>
             <div class="social-media-icon d-flex">
-              <a href="#" class="nav-link link-name-content pe-0">
+              <a href="#" class="nav-link link-name-content ps-0">
                 <i class="fab fa-facebook-f link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
@@ -186,7 +196,7 @@
                 <i class="fab fa-whatsapp link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
-                <i class="fab fa-google-plus-g link-dark icon-contact-foo"></i>
+                <i class="fab fa-snapchat-ghost link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
                 <i class="fab fa-instagram link-dark icon-contact-foo"></i>
@@ -194,24 +204,24 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-lg-center">
+        <div class="col-md-12 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
           <div class="list-content-en">
             <h5 class="title title-en h4">Contact</h5>
             <ul class="links-contact links list-unstyled p-0">
               <li class="link-title d-inline-block">
                 <a href="#" class="nav-link link-name-content align-items-center d-flex p-0 ">
                   <i class="fas fa-envelope link-dark"></i>
-                  <span class="link-dark me-2">Email: office-res@gramoli.com</span>
+                  <span class="link-dark ms-2">office-res@gramoli.com</span>
                 </a>
                 <a href="#" class="nav-link link-name-content p-0">
                   <i class="fas fa-phone-alt link-dark"></i>
-                  <span class="link-dark me-2">968578547885+</span>
+                  <span class="link-dark ms-1">+968578547885</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-3 d-flex justify-content-lg-center">
+        <div class="col-md-12 col-lg-3 my-3 d-flex d-flex justify-content-lg-center">
           <div class="list-content-en">
             <h5 class="title title-en h4">Property</h5>
             <ul class="private-condetion links list-unstyled p-0 m-0">
@@ -235,6 +245,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="./assets/js/log-in.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

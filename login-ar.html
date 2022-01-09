@@ -23,10 +23,10 @@
 <body>
   <!--Start upper nav-->
   <div class="upper-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 text-start align-self-center">
-          <div class="social-media-icon d-flex">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-5 align-self-center">
+          <div class="social-media-icon d-flex justify-content-center me-md-5">
             <a href="#" class="nav-link"><i class="fab fa-facebook-f icon-contact"></i></a>
             <a href="#" class="nav-link"> <i class="fab fa-twitter icon-contact"></i></a>
             <a href="#" class="nav-link"><i class="fab fa-whatsapp icon-contact"></i></a>
@@ -34,7 +34,7 @@
             <a href="#" class="nav-link"><i class="fab fa-instagram icon-contact"></i></a>
           </div>
         </div>
-        <div class="col-md-8 align-self-center text-end">
+        <div class="col-lg-6 col-md-8 col-sm-8 align-self-center justify-content-center">
           <div class="contact d-flex justify-content-end">
             <a href="#" class="nav-link contact-res">
               <span class="contact-tel">968578547885+</span>
@@ -45,6 +45,9 @@
               <i class="fas fa-map-marker-alt icon-contact"></i>
             </a>
           </div>
+        </div>
+        <div class="col-md-1 col-sm-1 col-1 d-flex align-items-center justify-content-center d-sm-none d-md-flex">
+          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
         </div>
       </div>
     </div>
@@ -87,13 +90,13 @@
     <!-- start login -->
     <!-- login and register button -->
     <section class="form-container">
-      <div class="container">
-        <form action="./index.html">
+      <form action="./index.html">
+        <div class="container">
           <div class="row justify-content-center">
-            <div class="col-md-5 col-8 text-center">
+            <div class="col-md-5 col-8 text-center mb-2">
               <button id="btnLogin" class="btn btn-log shadow">تسجيل الدخول</button>
             </div>
-            <div class="col-md-5 col-8 text-center">
+            <div class="col-md-5 col-8 text-center mb-2">
               <button id="btnRregister" class="btn btn-register shadow">انشاء حساب جديد</button>
             </div>
           </div>
@@ -103,16 +106,16 @@
               <div class="row justify-content-center">
                 <h3 class="sign-in form-header">تسجيل الدخول</h3>
                 <div class="col-10">
-                  <input id="logMail" class="form-control input-control text-start" type="email"
-                    placeholder="البريد الالكتروني" required />
-                  <p class="alert-forgot p-0 m-0"></p>
+                  <input id="logMail" class="form-control input-control text-start" name="logEmail" type="email"
+                    placeholder="البريد الالكتروني" />
+                  <p class="alert-forgot alert-forgot-filed p-0 m-0"></p>
                 </div>
                 <div class="col-10">
-                  <input id="logPass" class="form-control input-control text-start" type="password"
-                    placeholder="ادخل كلمه المرور" required />
-                  <p class="alert-forgot-pass p-0 m-0"></p>
+                  <input id="logPass" class="form-control input-control text-start" name="logPassword" type="password"
+                    placeholder="ادخل كلمه المرور" />
+                  <p class="alert-forgot-pass alert-forgot-filed p-0 m-0"></p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 col-8">
                   <button id="submit" class="btn btn-submit" type="submit">تسجيل الدخول</button>
                 </div>
                 <button class=" btn forget-pass" id="forgetPass">تذكر كلمه السر؟ </button>
@@ -123,21 +126,26 @@
               <h3 class="register form-header">انشاء حساب جديد</h3>
               <div class="row justify-content-center">
                 <div class="col-10">
-                  <input id="reMail" class="form-control input-control text-start" type="email"
-                    placeholder="البريد الالكتروني" required />
-                  <p class="alert-forgot-reges p-0 m-0"></p>
+                  <input id="reMail" class="form-control input-control text-start" name="email" type="email"
+                    placeholder="البريد الالكتروني" />
+                  <p class="alert-forgot-reges alert-forgot-filed p-0 m-0"></p>
                 </div>
                 <div class="col-10">
-                  <input id="repass" class="form-control input-control text-start" type="password"
-                    placeholder="كلمه السر" required />
-                  <p class="alert-forgot-regesPass p-0 m-0"></p>
+                  <input type="tel" id="phone" class="form-control input-control text-start" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="رقم الجوال" required>
+                  <p class="alert-forgot-tel alert-forgot-filed p-0 m-0"></p>
                 </div>
                 <div class="col-10">
-                  <input id="rePassPlaceholder" class="form-control input-control text-start" type="password"
-                    placeholder="تأكيد كلمه السر" required />
-                  <p class="alert-forgot-resRegesPass  p-0 m-0"></p>
+                  <input id="repass" class="form-control input-control text-start" name="password" type="password"
+                    placeholder="كلمه السر" />
+                  <p class="alert-forgot-regesPass alert-forgot-filed p-0 m-0"></p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-10">
+                  <input id="rePassPlaceholder" class="form-control input-control text-start" name="confirmPass"
+                    type="password" placeholder="تأكيد كلمه السر" />
+                  <p class="alert-forgot-resRegesPass alert-forgot-filed  p-0 m-0"></p>
+                </div>
+                <div class="col-md-5 col-8">
                   <button class="btn btn-submit" id="regSubmit" type="submit">انشاء حساب في جرامولي</button>
                 </div>
               </div>
@@ -146,18 +154,18 @@
               <h3 class="forget-pass">هل نسيت كلمه السر</h3>
               <div class="row justify-content-center">
                 <div class="col-10">
-                  <input id="forgetMail" class="form-control input-control text-start" type="email"
-                    placeholder="البريد الالكتروني" required />
-                  <p class="alert-forgot-password p-0 m-0"></p>
+                  <input id="forgetMail" class="form-control input-control text-start" name="forgotEmail" type="email"
+                    placeholder="البريد الالكتروني" />
+                  <p class="alert-forgot-password alert-forgot-filed p-0 m-0"></p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 col-8">
                   <button id="forgetPass" class="btn btn-submit" type="submit"> ارسال الرمز</button>
                 </div>
               </div>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
       <!-- end  login -->
     </section>
     <!-- end login -->
@@ -166,7 +174,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-10 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
+        <div class="col-md-12 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
           <div class="who-we list-content">
             <h5 class="title h4">جرامولي</h5>
             <p class="who-we-content">جرامولي مطعم يقدم وجبات طازجه صحيه فيه الكثير من اطباق الطعام المختلفه
@@ -174,7 +182,7 @@
               الزياره</p>
           </div>
         </div>
-        <div class="col-md-10 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
+        <div class="col-md-12 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
           <div class="list-content">
             <h5 class="title h4">تابعنا</h5>
             <div class="social-media-icon d-flex">
@@ -188,7 +196,7 @@
                 <i class="fab fa-whatsapp link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
-                <i class="fab fa-google-plus-g link-dark icon-contact-foo"></i>
+                <i class="fab fa-snapchat-ghost link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
                 <i class="fab fa-instagram link-dark icon-contact-foo"></i>
@@ -196,24 +204,24 @@
             </div>
           </div>
         </div>
-        <div class="col-md-10 col-lg-3 my-2 d-flex d-flex justify-content-lg-centerr">
+        <div class="col-md-12 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
           <div class="list-content">
             <h5 class="title h4">الاتصال</h5>
             <ul class="links-contact links list-unstyled p-0 m-0">
               <li class="link-title d-inline-block">
                 <a href="#" class="nav-link link-name-content p-0">
-                  <span class="link-dark">Email: office-res@gramoli.com</span>
+                  <span class="link-dark pe-1">office-res@gramoli.com</span>
                   <i class="fas fa-envelope link-dark"></i>
                 </a>
                 <a href="#" class="nav-link link-name-content p-0">
-                  <span class="link-dark">968578547885+</span>
+                  <span class="link-dark pe-1">968578547885+</span>
                   <i class="fas fa-phone-alt link-dark"></i>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-10 col-lg-3 my-3 d-flex d-flex justify-content-lg-centerer">
+        <div class="col-md-12 col-lg-3 my-3 d-flex d-flex justify-content-lg-center">
           <div class="list-content">
             <h5 class="title h4">الملكيه</h5>
             <ul class="private-condetion links list-unstyled m-0">

@@ -738,7 +738,6 @@ body {
 }
 
 .form-container {
-  min-width: 400px;
   max-width: 600px;
   margin: 50px auto;
 }
@@ -809,12 +808,7 @@ body {
   background-color: #ffc93a;
 }
 
-.alert-forgot,
-.alert-forgot-pass,
-.alert-forgot-reges,
-.alert-forgot-regesPass,
-.alert-forgot-resRegesPass,
-.alert-forgot-password {
+.alert-forgot-filed {
   padding: 0;
   color: #b63c3c;
   height: 24px;

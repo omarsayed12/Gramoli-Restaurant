@@ -12,15 +12,18 @@
   <link rel="stylesheet" href="./assets/vendor/all.min.css">
   <!-- style css -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Mealz</title>
+  <title>Menu</title>
 </head>
 
 <body>
   <!--Start upper nav-->
   <div class="upper-nav">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 align-self-center">
+      <div class="row justify-content-md-center">
+        <div class="col-md-1 col-sm-1 col-1 d-flex align-items-center justify-content-center d-sm-none d-md-flex">
+          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
+        </div>
+        <div class="col-lg-7 col-md-8 align-self-center">
           <div class="contact d-flex">
             <a href="#" class="nav-link contact-res">
               <i class="fas fa-map-marker-alt icon-contact"></i>
@@ -32,20 +35,16 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 d-flex text-start align-items-center align-self-center justify-content-between">
+        <div class="col-lg-4 col-md-6 d-flex text-start align-items-center align-self-center justify-content-center">
           <!-- cart -->
-          <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
           <div class="cart-btn d-flex align-items-center">
-            <a href="#" class="cart nav-link">
-              <span name="basket" class="cart-quantity">0</span>
+            <a href="#" class=" nav-link">
               <i class="fas fa-shopping-cart cart-icon"></i>
             </a>
-            <!-- cart -->
-            <div class="display-cart shadow">
-              <span id="content-cart">اسم الصنف</span>
-              <div class="content-name"></div>
-            </div>
           </div>
+          <ul id="buyItems" class="cart disCart list-unstyled">
+            <h2>shopping cart</h2>
+          </ul>
           <div class="social-media-icon d-flex">
             <a href="#" class="nav-link"><i class="fab fa-facebook-f icon-contact"></i></a>
             <a href="#" class="nav-link"> <i class="fab fa-twitter icon-contact"></i></a>
@@ -101,17 +100,17 @@
             <li class="nav-item list-menue-content" role="presentation">
               <button class="nav-link list-menue-content active" id="pills-home-tab" data-bs-toggle="pill"
                 data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                aria-selected="true">Chicken</button>
+                aria-selected="true">Checken</button>
             </li>
             <li class="nav-item list-menue-content" role="presentation">
               <button class="nav-link list-menue-content" id="pills-profile-tab" data-bs-toggle="pill"
                 data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                aria-selected="false">Meat</button>
+                aria-selected="false">meat</button>
             </li>
             <li class="nav-item list-menue-content" role="presentation">
               <button class="nav-link list-menue-content" id="pills-contact-tab" data-bs-toggle="pill"
                 data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                aria-selected="false">Rice</button>
+                aria-selected="false">Rise</button>
             </li>
           </ul>
           <div class="tab-content" id="pills-tabContent">
@@ -121,36 +120,46 @@
                 <div class="row">
                   <div class="col-lg-4 col-md-8">
                     <div class="row m-auto">
-                      <div class="card-body card-menu shadow rounded-3 d-flex justify-content-between">
+                      <div class="mealz-content card-body card-menu shadow rounded-3 d-flex justify-content-between">
                         <div class="col-md-8 col-8">
-                          <h4 class="card-title meal-name">Fried Chicken</h4>
-                          <p class="card-text meal-detail pt-3">
-                            Charcoal roasted chicken with great mixing
-                            950 c </p>
-                          <button type="button" class="btn btn-select add-to-cart">Select</button>
+                          <h4 class="card-title meal-name">Roast Chicken</h4>
+                          <p class="card-text meal-detail pt-3 m-1">
+                            chicken with a nice mix
+                            950c
+                          </p>
+                          <div class="d-flex justify-content-between px-2 d-none">
+                            <h6>price</h6>
+                            <h6><span class="price-value">50</span></h6>
+                          </div>
+                          <button type="button" class="btn btn-select add-to-cart" data-product-id="10">
+                            Select Meal</button>
                         </div>
                         <div class="col-md-4 col-4 d-flex">
-                          <div class="img-meal">
-                            <img src="./assets/imgs/chicken1.JPEG" class="img-meal-size h-100 w-100 rounded-3"
-                              alt="chicken1">
-                          </div>
+                          <img src="./assets/imgs/chicken1.JPEG" class="img-meal img-meal-size h-100 w-100 rounded-3"
+                            alt="chicken1">
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-8">
                     <div class="row m-auto">
-                      <div class="card-body card-menu shadow rounded-3 d-flex justify-content-between">
+                      <div class="mealz-content card-body card-menu shadow rounded-3 d-flex justify-content-between">
                         <div class="col-md-8 col-8">
-                          <h4 class="card-title meal-name">Mendy Chicken</h4>
-                          <p class="card-text meal-detail pt-3">
-                            Mendy's Chicken With A Nice Mix
+                          <h4 class="card-title meal-name">Mendy's Chicken</h4>
+                          <p class="card-text meal-detail pt-3 m-1">
+                            chicken with a nice mix
                             950c
                           </p>
-                          <button type="button" class="btn btn-select add-to-cart">Select</button>
+                          <div class="d-flex justify-content-between px-2 d-none">
+                            <h6>price</h6>
+                            <h6><span class="price-value">50</span></h6>
+                          </div>
+                          <button type="button" class="btn btn-select add-to-cart" data-product-id="11">
+                            Select Meal
+                          </button>
                         </div>
                         <div class="col-md-4 col-4 d-flex">
-                          <img src="./assets/imgs/chicken2.JPEG" class="img-meal-size h-100 w-100 rounded-3"
+                          <img src="./assets/imgs/chicken2.JPEG" class="img-meal img-meal-size h-100 w-100 rounded-3"
                             alt="chicken2">
                         </div>
                       </div>
@@ -158,18 +167,23 @@
                   </div>
                   <div class="col-lg-4 col-md-8">
                     <div class="row m-auto">
-                      <div class="card-body card-menu shadow rounded-3 d-flex justify-content-between">
+                      <div class="mealz-content card-body card-menu shadow rounded-3 d-flex justify-content-between">
                         <div class="col-md-8 col-8">
                           <h4 class="card-title meal-name">Whole Chicken</h4>
-                          <p class="card-text meal-detail pt-3">
-                            Whole chicken cooked with great mixing
-                            950 c
+                          <p class="card-text meal-detail pt-3 m-1">
+                            chicken with a nice mix
+                            480c
                           </p>
-                          <button type="button" class="btn btn-select add-to-cart">Select</button>
+                          <div class="d-flex justify-content-between px-2 d-none">
+                            <h6>price</h6>
+                            <h6><span class="price-value">50</span></h6>
+                          </div>
+                          <button type="button" class="btn btn-select add-to-cart" data-product-id="12">Select Meal
+                          </button>
                         </div>
                         <div class="col-md-4 col-4 d-flex">
-                          <img src="./assets/imgs/chicken3.JPEG" class="img-meal-size h-100 w-100 w-100 rounded-3"
-                            alt="chicken3">
+                          <img src="./assets/imgs/chicken3.JPEG"
+                            class="img-meal img-meal-size h-100 w-100 w-100 rounded-3" alt="chicken3">
                         </div>
                       </div>
                     </div>
@@ -183,54 +197,69 @@
                 <div class="row">
                   <div class="col-lg-4 col-md-8">
                     <div class="row m-auto">
-                      <div class="card-body card-menu shadow rounded-3 d-flex justify-content-between">
+                      <div class="mealz-content card-body card-menu shadow rounded-3 d-flex justify-content-between">
                         <div class="col-md-8 col-8">
-                          <h4 class="card-title meal-name">roast beef</h4>
-                          <p class="card-text meal-detail pt-3">
-                            Charcoal roasted chicken with great mixing 950 c
+                          <h4 class="card-title meal-name">Roast beef</h4>
+                          <p class="card-text meal-detail pt-3 m-1">
+                            meat with a nice mix
+                            808c
                           </p>
-                          <button type="button" class="btn btn-select add-to-cart">Select</button>
+                          <div class="d-flex justify-content-between px-2 d-none">
+                            <h6>Price</h6>
+                            <h6><span class="price-value">90</span></h6>
+                          </div>
+                          <button type="button" class="btn btn-select add-to-cart" data-product-id="13">Select Meal
+                          </button>
                         </div>
                         <div class="col-md-4 col-4 d-flex">
-                          <div class="img-meal">
-                            <img src="./assets/imgs/meet3.JPEG" class="img-meal-size h-100 w-100 rounded-3" alt="meet1">
-                          </div>
+                          <img src="./assets/imgs/meet3.JPEG" class="img-meal img-meal-size h-100 w-100 w-100 rounded-3"
+                            alt="chicken3">
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-8">
                     <div class="row m-auto">
-                      <div class="card-body card-menu shadow rounded-3 d-flex justify-content-between">
+                      <div class="mealz-content card-body card-menu shadow rounded-3 d-flex justify-content-between">
                         <div class="col-md-8 col-8">
-                          <h4 class="card-title meal-name">roast beef</h4>
-                          <p class="card-text meal-detail pt-3">
-                            Charcoal roasted chicken with great mixing 950 c
+                          <h4 class="card-title meal-name">Roast beef</h4>
+                          <p class="card-text meal-detail pt-3 m-1">
+                            meat with a nice mix
+                            778c
                           </p>
-                          <button type="button" class="btn btn-select add-to-cart">Select</button>
+                          <div class="d-flex justify-content-between px-2 d-none">
+                            <h6>Price</h6>
+                            <h6><span class="price-value">150</span></h6>
+                          </div>
+                          <button type="button" class="btn btn-select add-to-cart" data-product-id="14">Select Meal
+                          </button>
                         </div>
                         <div class="col-md-4 col-4 d-flex">
-                          <div class="img-meal">
-                            <img src="./assets/imgs/meet2.JPEG" class="img-meal-size h-100 w-100 rounded-3" alt="meet2">
-                          </div>
+                          <img src="./assets/imgs/meet2.JPEG" class="img-meal img-meal-size h-100 w-100 w-100 rounded-3"
+                            alt="chicken3">
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-8">
                     <div class="row m-auto">
-                      <div class="card-body card-menu shadow rounded-3 d-flex justify-content-between">
+                      <div class="mealz-content card-body card-menu shadow rounded-3 d-flex justify-content-between">
                         <div class="col-md-8 col-8">
-                          <h4 class="card-title meal-name">roast beef</h4>
-                          <p class="card-text meal-detail pt-3">
-                            Charcoal roasted chicken with great mixing 950 c
+                          <h4 class="card-title meal-name">Roast Steak</h4>
+                          <p class="card-text meal-detail pt-3 m-1">
+                            meat with a nice mix
+                            778c
                           </p>
-                          <button type="button" class="btn btn-select add-to-cart">Select</button>
+                          <div class="d-flex justify-content-between px-2 d-none">
+                            <h6>Price</h6>
+                            <h6><span class="price-value">100</span></h6>
+                          </div>
+                          <button type="button" class="btn btn-select add-to-cart" data-product-id="15">Select Meal
+                          </button>
                         </div>
                         <div class="col-md-4 col-4 d-flex">
-                          <div class="img-meal">
-                            <img src="./assets/imgs/meet3.JPEG" class="img-meal-size h-100 w-100 rounded-3" alt="meet3">
-                          </div>
+                          <img src="./assets/imgs/meet3.JPEG" class="img-meal img-meal-size h-100 w-100 rounded-3"
+                            alt="meet3">
                         </div>
                       </div>
                     </div>
@@ -244,54 +273,69 @@
                 <div class="row align-self-center">
                   <div class="col-lg-4 col-md-8">
                     <div class="row m-auto">
-                      <div class="card-body card-menu shadow rounded-3 d-flex justify-content-between">
+                      <div class="mealz-content card-body card-menu shadow rounded-3 d-flex justify-content-between">
                         <div class="col-md-8 col-8">
-                          <h4 class="card-title meal-name">white rice</h4>
-                          <p class="card-text meal-detail pt-3">
-                            Charcoal roasted chicken with great mixing 950 c
+                          <h4 class="card-title meal-name">white rice </h4>
+                          <p class="card-text meal-detail pt-3 m-1">
+                            A white rice dish mixing
+                            950K
                           </p>
-                          <button type="button" class="btn btn-select add-to-cart">Select</button>
+                          <div class="d-flex justify-content-between px-2 d-none">
+                            <h6>Price</h6>
+                            <h6><span class="price-value">360</span></h6>
+                          </div>
+                          <button type="button" class="btn btn-select add-to-cart" data-product-id="16">Select Meal
+                          </button>
                         </div>
                         <div class="col-md-4 col-4 d-flex">
-                          <div class="img-meal">
-                            <img src="./assets/imgs/rise1.JPEG" class="img-meal-size h-100 w-100 rounded-3" alt="...">
-                          </div>
+                          <img src="./assets/imgs/rise1.JPEG" class="img-meal img-meal-size h-100 w-100 rounded-3"
+                            alt="Rise">
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-8">
                     <div class="row m-auto">
-                      <div class="card-body card-menu shadow rounded-3 d-flex justify-content-between">
+                      <div class="mealz-content card-body card-menu shadow rounded-3 d-flex justify-content-between">
                         <div class="col-md-8 col-8">
                           <h4 class="card-title meal-name">Rice plate</h4>
-                          <p class="card-text meal-detail pt-3">
-                            Charcoal roasted chicken with great mixing 950 c
+                          <p class="card-text meal-detail pt-3 m-1">
+                            By calling me a brilliant
+                            950K
                           </p>
-                          <button type="button" class="btn btn-select add-to-cart">Select</button>
+                          <div class="d-flex justify-content-between px-2 d-none">
+                            <h6>Price</h6>
+                            <h6><span class="price-value">22</span></h6>
+                          </div>
+                          <button type="button" class="btn btn-select add-to-cart" data-product-id="17">Select Meal
+                          </button>
                         </div>
                         <div class="col-md-4 col-4 d-flex">
-                          <div class="img-meal">
-                            <img src="./assets/imgs/rise2.JPEG" class="img-meal-size h-100 w-100 rounded-3" alt="...">
-                          </div>
+                          <img src="./assets/imgs/rise2.JPEG" class="img-meal img-meal-size h-100 w-100 rounded-3"
+                            alt="rise">
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-8">
                     <div class="row m-auto">
-                      <div class="card-body card-menu shadow rounded-3 d-flex justify-content-between">
+                      <div class="mealz-content card-body card-menu shadow rounded-3 d-flex justify-content-between">
                         <div class="col-md-8 col-8">
-                          <h4 class="card-title meal-name">yellow rice</h4>
-                          <p class="card-text meal-detail pt-3">
-                            Charcoal roasted chicken with great mixing 950 c
+                          <h4 class="card-title meal-name">Yellow Rice</h4>
+                          <p class="card-text meal-detail pt-3 m-1">
+                            Yellow rice dish with nuts
+                            950K
                           </p>
-                          <button type="button" class="btn btn-select add-to-cart">Select</button>
+                          <div class="d-flex justify-content-between px-2 d-none">
+                            <h6>Price</h6>
+                            <h6><span class="price-value">20</span></h6>
+                          </div>
+                          <button type="button" class="btn btn-select add-to-cart" data-product-id="18">Select Meal
+                          </button>
                         </div>
                         <div class="col-md-4 col-4 d-flex">
-                          <div class="img-meal">
-                            <img src="./assets/imgs/rise4.JPEG" class="img-meal-size h-100 w-100 rounded-3" alt="...">
-                          </div>
+                          <img src="./assets/imgs/rise4.JPEG" class="img-meal img-meal-size h-100 w-100 rounded-3"
+                            alt="rise">
                         </div>
                       </div>
                     </div>
@@ -308,7 +352,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-lg-3 my-2">
+        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-lg-center">
           <div class="who-we">
             <div class="list-content-en">
               <h5 class="title title-en h4">Gramoli</h5>
@@ -319,11 +363,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-lg-center">
+        <div class="col-md-12 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
           <div class="list-content-en">
             <h5 class="title title-en h4">Follow us</h5>
             <div class="social-media-icon d-flex">
-              <a href="#" class="nav-link link-name-content pe-0">
+              <a href="#" class="nav-link link-name-content ps-0">
                 <i class="fab fa-facebook-f link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
@@ -333,7 +377,7 @@
                 <i class="fab fa-whatsapp link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
-                <i class="fab fa-google-plus-g link-dark icon-contact-foo"></i>
+                <i class="fab fa-snapchat-ghost link-dark icon-contact-foo"></i>
               </a>
               <a href="#" class="nav-link link-name-content">
                 <i class="fab fa-instagram link-dark icon-contact-foo"></i>
@@ -341,24 +385,24 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-2 d-flex justify-content-lg-center">
+        <div class="col-md-12 col-lg-3 my-2 d-flex d-flex justify-content-lg-center">
           <div class="list-content-en">
             <h5 class="title title-en h4">Contact</h5>
             <ul class="links-contact links list-unstyled p-0">
               <li class="link-title d-inline-block">
                 <a href="#" class="nav-link link-name-content align-items-center d-flex p-0 ">
                   <i class="fas fa-envelope link-dark"></i>
-                  <span class="link-dark me-2">Email: office-res@gramoli.com</span>
+                  <span class="link-dark ms-2">office-res@gramoli.com</span>
                 </a>
                 <a href="#" class="nav-link link-name-content p-0">
                   <i class="fas fa-phone-alt link-dark"></i>
-                  <span class="link-dark me-2">968578547885+</span>
+                  <span class="link-dark ms-1">+968578547885</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 my-3 d-flex justify-content-lg-center">
+        <div class="col-md-12 col-lg-3 my-3 d-flex d-flex justify-content-lg-center">
           <div class="list-content-en">
             <h5 class="title title-en h4">Property</h5>
             <ul class="private-condetion links list-unstyled p-0 m-0">
@@ -381,12 +425,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <!-- Slick Carousel jquery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <!-- Slick Carousel Js -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-  <script src="./assets/js/slick-slider.js"></script>
+  <script src="./assets/js/cart.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
