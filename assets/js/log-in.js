@@ -151,7 +151,7 @@ regSubmit.addEventListener("click", (event) => {
     else if(emailArray.indexOf(emailReg) == -1){
       emailArray.push(emailReg);
       passwordArray.push(passwordReg);
-      // window.Location.href = "../index.html"
+      window.Location.href = "../index.html"
     }
   }
   else if (document.documentElement.lang === "en") {
@@ -177,7 +177,7 @@ regSubmit.addEventListener("click", (event) => {
     }else if(emailArray.indexOf(emailReg) == -1){
       emailArray.push(emailReg);
       passwordArray.push(passwordReg);
-      // window.Location.href = "../index.html"
+      window.Location.href = "../index.html"
     }
   }
 })
