@@ -102,6 +102,10 @@
     .contact-tel, .title {
       color: #FFF;
       font-size: 17px;
+
+      @media screen and (max-width:800.8px ) {
+        font-size: 14px;
+      }
     }
 
     &:hover {

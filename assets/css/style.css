@@ -7,7 +7,7 @@ body {
   font-family: "DINNextLTW23–Bold";
 }
 
-.bg-color, .food-menu .btn-select, .mealz-content .meal-detail .meal-title .btn-select, .mealz-content .meal-img .select-chef .btn-toggle, .navbar .navbar-nav .nav-link:focus, .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active,
+.bg-color, .list-food-menu .btn-select, .hover-meal .btn-select, .mealz-content .meal-detail .meal-title .btn-select, .mealz-content .select-chef .btn-toggle, .navbar .navbar-nav .nav-link:focus, .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .show > .nav-link, .ui-datepicker-calendar tbody td a:hover, .wrapper .change-date, .product-title {
   background-color: #72a73e;
   color: #FFF;
@@ -48,7 +48,7 @@ body {
   position: absolute;
 }
 
-.right-line-before, footer .title::before, .food-menu .food-list-name::before, .healthy .healthy-food-content .select-healthy-survival::before {
+.right-line-before, footer .title::before, .list-food-menu .food-list-name::before, .healthy .healthy-food-content .select-healthy-survival::before {
   content: "";
   position: absolute;
   right: -13px;
@@ -342,6 +342,11 @@ body {
   color: #FFF;
   font-size: 17px;
 }
+@media screen and (max-width: 800.8px) {
+  .upper-nav .contact-res .contact-tel, .upper-nav .contact-res .title {
+    font-size: 14px;
+  }
+}
 .upper-nav .contact-res:hover {
   -webkit-transform: scale(1.01);
   -moz-transform: scale(1.01);
@@ -621,6 +626,7 @@ body {
 }
 
 .mealz-content {
+  position: relative;
   border-radius: 10px;
   margin: 15px 0;
   -webkit-box-shadow: -2px 1px 5px 2px #0d0d0d61;
@@ -635,27 +641,13 @@ body {
   transition: 0.5s;
 }
 .mealz-content:hover {
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  transform: scale(1.02);
-  -webkit-transform: translate(4px, -10px);
-  -moz-transform: translate(4px, -10px);
-  -ms-transform: translate(4px, -10px);
-  -o-transform: translate(4px, -10px);
-  transform: translate(4px, -10px);
   -webkit-box-shadow: -1px 5px 15px 1px #00000091;
   -moz-box-shadow: -1px 5px 15px 1px #00000091;
   -ms-box-shadow: -1px 5px 15px 1px #00000091;
   -o-box-shadow: -1px 5px 15px 1px #00000091;
   box-shadow: -1px 5px 15px 1px #00000091;
 }
-.mealz-content .meal-img {
-  height: 165px;
-  position: relative;
-}
-.mealz-content .meal-img .select-chef {
+.mealz-content .select-chef {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -663,33 +655,37 @@ body {
   top: 10px;
   padding: 0 10px;
   width: 100%;
+  z-index: 99999999;
 }
-.mealz-content .meal-img .select-chef .kcal {
+.mealz-content .select-chef .kcal {
   font-size: 15px;
   border-radius: 4px;
   background-color: #ffbd55;
   padding: 3px 10px;
 }
-.mealz-content .meal-img .select-chef .btn-toggle {
+.mealz-content .select-chef .btn-toggle {
   padding: 3px 18px;
 }
-.mealz-content .meal-img .select-chef .btn-toggle:focus {
+.mealz-content .select-chef .btn-toggle:focus {
   box-shadow: none;
   outline: 0;
 }
-.mealz-content .meal-img .select-chef .dropdown-toggle::after {
+.mealz-content .select-chef .dropdown-toggle::after {
   position: absolute;
-  left: 4px;
   top: 13px;
 }
-.mealz-content .meal-img .select-chef .dropdown-menu {
+.mealz-content .select-chef .dropdown-menu {
   border: 0;
   border-radius: 0 0px 5px 6px;
   min-width: 123px;
 }
-.mealz-content .meal-img .select-chef .dropdown-menu .dropdown-item.active:active,
-.mealz-content .meal-img .select-chef .dropdown-menu .dropdown-item:active {
+.mealz-content .select-chef .dropdown-menu .dropdown-item.active:active,
+.mealz-content .select-chef .dropdown-menu .dropdown-item:active {
   background-color: #72a73e;
+}
+.mealz-content .meal-img {
+  height: 165px;
+  position: relative;
 }
 .mealz-content .meal-img .img-meal {
   border-radius: 8px 8px 0 0;
@@ -729,13 +725,59 @@ body {
   }
 }
 
-.food-menu .food-list-name {
+.hover-meal {
+  position: absolute;
+  z-index: 9999999999;
+  top: -100px;
+  background-color: rgba(255, 255, 255, 0.987);
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+}
+.hover-meal .img-food {
+  padding: 10px;
+}
+.hover-meal .icon {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  background: url("../imgs/logo.PNG");
+  background-size: cover;
+  margin: auto;
+  margin-top: -49px;
+  width: 43px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  border: 2px solid #72a73e;
+}
+.hover-meal .meal-name {
+  font-weight: bold;
+  padding-top: 15px;
+}
+.hover-meal .icon-header {
+  font-size: 17px;
+  font-weight: bold;
+}
+.click-cart:active .hover-meal {
+  display: block;
+}
+
+.click-cart:focus .hover-meal {
+  display: block;
+}
+
+.list-food-menu {
+  min-height: 70vh;
+  align-items: center;
+  display: flex;
+}
+.list-food-menu .food-list-name {
   position: relative;
 }
-.food-menu .food-list-name::before {
+.list-food-menu .food-list-name::before {
   height: 26px;
 }
-.food-menu .food-list-name-en::before {
+.list-food-menu .food-list-name-en::before {
   left: -13px;
   height: 26px;
 }

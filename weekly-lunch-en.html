@@ -23,7 +23,7 @@
 <body>
   <!--Start upper nav-->
   <div class="upper-nav">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row justify-content-md-center">
         <div class="col-md-1 col-sm-1 col-1 d-flex align-items-center justify-content-center d-sm-none d-md-flex">
           <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
@@ -47,7 +47,7 @@
               <i class="fas fa-shopping-cart cart-icon"></i>
             </a>
           </div>
-          <ul id="buyItems" class="cart disCart cart-en list-unstyled">
+          <ul id="buyItems" class="cart disCart list-unstyled">
             <h2>shopping cart</h2>
           </ul>
           <div class="social-media-icon d-flex">
@@ -120,7 +120,6 @@
       </div>
     </div>
     <!-- end contact us -->
-
     <!-- start select days -->
     <div class="total-days pt-3" id="header">
       <div class="container">
@@ -302,40 +301,81 @@
         </div>
       </div>
     </div>
-    <!-- select days -->
-
+    <!--end select days -->
     <!-- start section healthy -->
-    <section class="mealz py-5" id="header">
+    <section class="mealz py-5">
       <section class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div class="dropdown">
-                    <a class="btn btn-toggle dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      chef 's Pick
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">mohamed's chef</a></li>
-                      <li><a class="dropdown-item" href="#">Alaa's chef</a></li>
-                    </ul>
-                  </div>
-                  <span class="kcal">450 Calories</span>
+            <div class=" mealz-content">
+              <div class="select-chef">
+                <div class="dropdown">
+                  <a class="btn btn-toggle dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    chef 's Pick
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">mohamed's chef</a></li>
+                    <li><a class="dropdown-item" href="#">Alaa's chef</a></li>
+                  </ul>
                 </div>
+                <span class="kcal">450 Calorie</span>
+              </div>
+              <div class="meal-img click-cart" tabindex="1">
+                <img src="./assets/imgs/meal3.JPEG" class="w-100 img-meal" alt="meal1">
+                <span class="gramoli-logo"></span>
                 <div class="d-flex justify-content-between px-4 d-none">
                   <h6>Price</h6>
-                  <h6><span class="price-value">10</span></h6>
+                  <h6><span class="price-value">18</span></h6>
+                </div>
+                <!--start display cart when click event -->
+                <div class="mealz-content-cart hover-meal shadow ">
+                  <div class="img-food">
+                    <img src="./assets/imgs/meal3.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      Chicken girl with potatoes
+                    </h5>
+                    <p class="link-secondary">Chicken girl with potatoes</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>Price</h6>
+                      <h6><span class="price-value">10</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class=alt="carp">
+                      <h4 class="icon-header">carbohydrate</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class=alt="calaories">
+                      <h4 class="icon-header">fat</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class=alt="fats">
+                      <h4 class="icon-header">Calorie</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class=alt="proten">
+                      <h4 class="icon-header">protein</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="1">Select Meal</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="1">Select Meal</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
+                  <h5 class="meal-name">
+                    Chicken girl with potatoes
                   </h5>
                 </div>
               </div>
@@ -343,23 +383,64 @@
           </div>
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
-              <div class="meal-img">
+              <div class="meal-img click-cart" tabindex="1">
                 <img src="./assets/imgs/meal2.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
-                  <span class="kcal">450 Calories</span>
+                  <span class="kcal">550 Calorie</span>
                 </div>
                 <div class="d-flex justify-content-between px-4 d-none">
                   <h6>Price</h6>
-                  <h6><span class="price-value">30</span></h6>
+                  <h6><span class="price-value">18</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow ">
+                  <div class="img-food">
+                    <img src="./assets/imgs/meal2.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      Crispy sandwich with potatoes
+                    </h5>
+                    <p class="link-secondary">Crispy sandwich with potatoes</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>Price</h6>
+                      <h6><span class="price-value">10</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class="carp" alt="carp">
+                      <h4 class="icon-header">carbohydrate</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class="calaories" alt="calaories">
+                      <h4 class="icon-header">fat</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class="fats" alt="fats">
+                      <h4 class="icon-header">Calorie</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class="proten" alt="proten">
+                      <h4 class="icon-header">protein</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="2">Select Meal</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="2">Select Meal</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
+                  <h5 class="meal-name">
+                    Crispy sandwich with potatoes
                   </h5>
                 </div>
               </div>
@@ -367,23 +448,64 @@
           </div>
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal3.JPEG" class="w-100 img-meal" alt="meal1">
+              <div class="meal-img click-cart" tabindex="1">
+                <img src="./assets/imgs/chicken1.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
-                  <span class="kcal">450 Calories</span>
+                  <span class="kcal">450 Calorie</span>
                 </div>
                 <div class="d-flex justify-content-between px-4 d-none">
                   <h6>Price</h6>
-                  <h6><span class="price-value">50</span></h6>
+                  <h6><span class="price-value">18</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow">
+                  <div class="img-food">
+                    <img src="./assets/imgs/chicken1.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      Chicken on Charcoal
+                    </h5>
+                    <p class="link-secondary">Lovely chicken on me with a nice mix</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>Price</h6>
+                      <h6><span class="price-value">10</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class="carp" alt="carp">
+                      <h4 class="icon-header">carbohydrate</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class="calaories" alt="calaories">
+                      <h4 class="icon-header">fat</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class="fats" alt="fats">
+                      <h4 class="icon-header">Calorie</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class="proten" alt="proten">
+                      <h4 class="icon-header">protein</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="3">Select Meal</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="3">Select Meal</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
+                  <h5 class="meal-name">
+                    Chicken on Charcoal
                   </h5>
                 </div>
               </div>
@@ -391,23 +513,64 @@
           </div>
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/mandi.JPEG" class="w-100 img-meal" alt="meal1">
+              <div class="meal-img click-cart" tabindex="1">
+                <img src="./assets/imgs/chicken3.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
-                  <span class="kcal">450 Calories</span>
+                  <span class="kcal">650 Calorie</span>
                 </div>
                 <div class="d-flex justify-content-between px-4 d-none">
                   <h6>Price</h6>
-                  <h6><span class="price-value">35</span></h6>
+                  <h6><span class="price-value">90</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow">
+                  <div class="img-food">
+                    <img src="./assets/imgs/chicken3.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      Whole chicken with potatoes
+                    </h5>
+                    <p class="link-secondary">Whole chicken with great mixing</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>Price</h6>
+                      <h6><span class="price-value">100</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class="carp" alt="carp">
+                      <h4 class="icon-header">carbohydrate</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class="calaories" alt="calaories">
+                      <h4 class="icon-header">fat</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class="fats" alt="fats">
+                      <h4 class="icon-header">Calorie</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class="proten" alt="proten">
+                      <h4 class="icon-header">protein</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="4">Select Meal</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="4">Select Meal</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
+                  <h5 class="meal-name">
+                    Whole chicken with potatoes
                   </h5>
                 </div>
               </div>
@@ -415,23 +578,64 @@
           </div>
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/chicken1.JPEG" class="w-100 img-meal" alt="meal1">
+              <div class="meal-img click-cart" tabindex="1">
+                <img src=" ./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
-                  <span class="kcal">450 Calories</span>
+                  <span class="kcal">430 Calorie</span>
                 </div>
                 <div class="d-flex justify-content-between px-4 d-none">
                   <h6>Price</h6>
-                  <h6><span class="price-value">60</span></h6>
+                  <h6><span class="price-value">50</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow">
+                  <div class="img-food">
+                    <img src="./assets/imgs/meal1.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      Half a chicken on charcoal
+                    </h5>
+                    <p class="link-secondary">Half a chicken on charcoal </p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>Price</h6>
+                      <h6><span class="price-value">50</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class=alt="carp">
+                      <h4 class="icon-header">carbohydrate</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class=alt="calaories">
+                      <h4 class="icon-header">fat</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class=alt="fats">
+                      <h4 class="icon-header">Calorie</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class=alt="proten">
+                      <h4 class="icon-header">protein</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="5">Select Meal</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="5">Select Meal</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
+                  <h5 class="meal-name">
+                    Half a chicken on charcoal
                   </h5>
                 </div>
               </div>
@@ -439,34 +643,73 @@
           </div>
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
+              <div class="meal-img click-cart" tabindex="1">
+                <img src="./assets/imgs/meet2.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
-                  <span class="kcal">450 Calories</span>
+                  <span class="kcal">450 Calorie</span>
                 </div>
                 <div class="d-flex justify-content-between px-4 d-none">
                   <h6>Price</h6>
-                  <h6><span class="price-value">25</span></h6>
+                  <h6><span class="price-value">120</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow">
+                  <div class="img-food">
+                    <img src="./assets/imgs/meet2.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      Special Mixing Meat
+                    </h5>
+                    <p class="link-secondary">Special Mixing Meat</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>Price</h6>
+                      <h6><span class="price-value">120</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class=alt="carp">
+                      <h4 class="icon-header">carbohydrate</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class=alt="calaories">
+                      <h4 class="icon-header">fat</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class=alt="fats">
+                      <h4 class="icon-header">Calorie</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class=alt="proten">
+                      <h4 class="icon-header">protein</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="6">Select Meal</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="6">Select Meal</button>
-                  <h5 class="meal-name meal-name-en">
-                    Shawarma Chicken with Potatoeses
+                  <h5 class="meal-name">
+                    Special Mixing Meat
                   </h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
       </section>
     </section>
     <!-- end section healthy-food -->
-
   </main>
   <!-- start footer -->
   <footer>
@@ -542,8 +785,6 @@
       </div>
   </footer>
   <!-- end footer -->
-
-
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

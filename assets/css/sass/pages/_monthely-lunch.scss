@@ -36,21 +36,20 @@
 }
 
 .mealz-content {
+  position: relative;
   border-radius: 10px;
   margin: 15px 0;
   @include box-shadow(-2px 1px 5px 2px #0d0d0d61);
   @include transition(.5s);
 
+
   &:hover {
-    @include transform(scale(1.02));
-    @include transform(translate(4px, -10px));
+    // @include transform(scale(1.01));
+    // @include transform(translate(4px, -10px));
     @include box-shadow(-1px 5px 15px 1px #00000091);
   }
-  .meal-img {
-    height: 165px;
-    position: relative;
 
-    .select-chef {
+.select-chef {
       position: absolute;
       display: flex;
       justify-content: space-between;
@@ -58,6 +57,7 @@
       top: 10px;
       padding: 0 10px;
       width: 100%;
+      z-index: 99999999;
 
       .kcal {
         font-size: 15px;
@@ -80,8 +80,8 @@
 
           &::after {
             position: absolute;
-            left: 4px;
             top: 13px
+            // left: 4px;
           }
         }
 
@@ -99,6 +99,10 @@
           }
         }
       }
+
+  .meal-img {
+    height: 165px;
+    position: relative;
 
     .img-meal {
       border-radius: 8px 8px 0 0;
@@ -152,3 +156,60 @@
   }
 }
 
+
+
+.hover-meal {
+  position: absolute;
+  z-index: 9999999999;
+  top: -100px;
+  background-color: rgba(255, 255, 255, 0.987);
+  width: 100%;
+
+  border-radius: 10px;
+  display: none;
+
+  .img-food {
+    padding: 10px;
+  }
+
+  .icon {
+    position: relative;
+    width: 43px;
+    height: 43px;
+    background: url("../imgs/logo.PNG");
+    background-size: cover;
+    margin: auto;
+    margin-top: -49px;
+    width: 43px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 50%;
+    border: 2px solid $main-color;
+  }
+
+  .meal-name {
+    font-weight: bold;
+    padding-top: 15px;
+  }
+  .icon-header {
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .btn-select {
+      @extend .bg-color;
+    ;
+    }
+}
+
+
+// .x:hover .hover-meal{
+//    display: block;
+// }
+
+.click-cart:active .hover-meal {
+  display: block;
+}
+
+.click-cart:focus .hover-meal{
+   display: block;
+}

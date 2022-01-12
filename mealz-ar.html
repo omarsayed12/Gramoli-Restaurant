@@ -49,7 +49,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-1 col-sm-1 col-1 d-flex align-items-center justify-content-center d-sm-none d-md-flex">
+        <div class="col-md-1 col-sm-1 col-1 d-flex align-items-center justify-content-end d-sm-none d-md-flex">
           <img src="./assets/imgs/logo.PNG" alt="logo" class="logo-nav">
         </div>
       </div>
@@ -91,83 +91,77 @@
   <!-- end nav -->
   <main>
     <!-- start section healthy -->
-    <section class="mealz py-5" id="header">
+    <section class="mealz py-5">
       <section class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div class="dropdown">
-                    <a class="btn btn-toggle dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      اختار الشيف
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">شيف محمد</a></li>
-                      <li><a class="dropdown-item" href="#">شيف علاء</a></li>
-                    </ul>
-                  </div>
-                  <span class="kcal">450 سعر حراري</span>
+            <div class=" mealz-content">
+              <div class="select-chef">
+                <div class="dropdown">
+                  <a class="btn btn-toggle dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    اختار الشيف
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">شيف محمد</a></li>
+                    <li><a class="dropdown-item" href="#">شيف علاء</a></li>
+                  </ul>
                 </div>
-                <div class="d-flex justify-content-between px-4">
+                <span class="kcal">450 سعر حراري</span>
+              </div>
+              <div class="meal-img click-cart" tabindex="1">
+                <img src="./assets/imgs/meal3.JPEG" class="w-100 img-meal" alt="meal1">
+                <span class="gramoli-logo"></span>
+                <div class="d-flex justify-content-between px-4 d-none">
                   <h6>السعر</h6>
-                  <h6><span class="price-value">10</span></h6>
+                  <h6><span class="price-value">18</span></h6>
+                </div>
+                <!--start display cart when click event -->
+                <div class="mealz-content-cart hover-meal shadow ">
+                  <div class="img-food">
+                    <img src="./assets/imgs/meal3.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      فته دجاج مع بطاطس
+                    </h5>
+                    <p class="link-secondary">فته دجاج مع بطاطس</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>السعر</h6>
+                      <h6><span class="price-value">10</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class=alt="carp">
+                      <h4 class="icon-header">كربوهيدرات</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class=alt="calaories">
+                      <h4 class="icon-header">دهون</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class=alt="fats">
+                      <h4 class="icon-header">سعر حراري</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class=alt="proten">
+                      <h4 class="icon-header">بروتين</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="1">اختر الوجبه</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="1">اختر الوجبه</button>
-                  <h5 class="meal-name">
-                    شاورما دجاج مع بطاطس
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal2.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div></div>
-                  <span class="kcal">450 سعر حراري</span>
-                </div>
-                <div class="d-flex justify-content-between px-4">
-                  <h6>السعر</h6>
-                  <h6><span class="price-value">50</span></h6>
-                </div>
-              </div>
-              <div class="meal-detail">
-                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select add-to-cart" data-product-id="2">اختر الوجبه</button>
-                  <h5 class="meal-name">
-                    شاورما لحم مع بطاطس
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-4">
-            <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal3.JPEG" class="w-100 img-meal" alt="meal1">
-                <span class="gramoli-logo"></span>
-                <div class="select-chef">
-                  <div></div>
-                  <span class="kcal">450 سعر حراري</span>
-                </div>
-                <div class="d-flex justify-content-between px-4">
-                  <h6>السعر</h6>
-                  <h6><span class="price-value">18</span></h6>
-                </div>
-              </div>
-              <div class="meal-detail">
-                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-select add-to-cart" data-product-id="3">اختر الوجبه</button>
                   <h5 class="meal-name">
                     فته دجاج مع بطاطس
                   </h5>
@@ -177,23 +171,194 @@
           </div>
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/mandi.JPEG" class="w-100 img-meal" alt="meal1">
+              <div class="meal-img click-cart" tabindex="1">
+                <img src="./assets/imgs/meal2.JPEG" class="w-100 img-meal" alt="meal1">
+                <span class="gramoli-logo"></span>
+                <div class="select-chef">
+                  <div></div>
+                  <span class="kcal">550 سعر حراري</span>
+                </div>
+                <div class="d-flex justify-content-between px-4 d-none">
+                  <h6>السعر</h6>
+                  <h6><span class="price-value">18</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow ">
+                  <div class="img-food">
+                    <img src="./assets/imgs/meal2.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      ساندوتش كريسبي مع بطاطس
+                    </h5>
+                    <p class="link-secondary">ساندوتش كريسبي مع بطاطس</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>السعر</h6>
+                      <h6><span class="price-value">10</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class="carp" alt="carp">
+                      <h4 class="icon-header">كربوهيدرات</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class="calaories" alt="calaories">
+                      <h4 class="icon-header">دهون</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class="fats" alt="fats">
+                      <h4 class="icon-header">سعر حراري</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class="proten" alt="proten">
+                      <h4 class="icon-header">بروتين</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="2">اختر الوجبه</button>
+                  </div>
+                </div>
+              </div>
+              <div class="meal-detail">
+                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-select add-to-cart" data-product-id="2">اختر الوجبه</button>
+                  <h5 class="meal-name">
+                    ساندوتش كريسبي مع بطاطس
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-4">
+            <div class="mealz-content">
+              <div class="meal-img click-cart" tabindex="1">
+                <img src="./assets/imgs/chicken1.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
                   <span class="kcal">450 سعر حراري</span>
                 </div>
-                <div class="d-flex justify-content-between px-4">
+                <div class="d-flex justify-content-between px-4 d-none">
                   <h6>السعر</h6>
-                  <h6><span class="price-value">80</span></h6>
+                  <h6><span class="price-value">18</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow">
+                  <div class="img-food">
+                    <img src="./assets/imgs/chicken1.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      دجاج علي الفحم
+                    </h5>
+                    <p class="link-secondary">دجاج علي الفخم بخلطه رائعه</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>السعر</h6>
+                      <h6><span class="price-value">10</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class="carp" alt="carp">
+                      <h4 class="icon-header">كربوهيدرات</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class="calaories" alt="calaories">
+                      <h4 class="icon-header">دهون</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class="fats" alt="fats">
+                      <h4 class="icon-header">سعر حراري</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class="proten" alt="proten">
+                      <h4 class="icon-header">بروتين</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="3">اختر الوجبه</button>
+                  </div>
+                </div>
+              </div>
+              <div class="meal-detail">
+                <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-select add-to-cart" data-product-id="3">اختر الوجبه</button>
+                  <h5 class="meal-name">
+                    دجاج علي الفحم
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-4">
+            <div class="mealz-content">
+              <div class="meal-img click-cart" tabindex="1">
+                <img src="./assets/imgs/chicken3.JPEG" class="w-100 img-meal" alt="meal1">
+                <span class="gramoli-logo"></span>
+                <div class="select-chef">
+                  <div></div>
+                  <span class="kcal">650 سعر حراري</span>
+                </div>
+                <div class="d-flex justify-content-between px-4 d-none">
+                  <h6>السعر</h6>
+                  <h6><span class="price-value">90</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow">
+                  <div class="img-food">
+                    <img src="./assets/imgs/chicken3.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      دجاج كامله مع بطاطس
+                    </h5>
+                    <p class="link-secondary">دجاج كامله بخلطه رائعه </p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>السعر</h6>
+                      <h6><span class="price-value">100</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class="carp" alt="carp">
+                      <h4 class="icon-header">كربوهيدرات</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class="calaories" alt="calaories">
+                      <h4 class="icon-header">دهون</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class="fats" alt="fats">
+                      <h4 class="icon-header">سعر حراري</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class="proten" alt="proten">
+                      <h4 class="icon-header">بروتين</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="4">اختر الوجبه</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="4">اختر الوجبه</button>
                   <h5 class="meal-name">
-                    مندي دجاج مع بطاطس
+                    دجاج كامله مع بطاطس
                   </h5>
                 </div>
               </div>
@@ -201,23 +366,64 @@
           </div>
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/chicken2.JPEG" class="w-100 img-meal" alt="meal1">
+              <div class="meal-img click-cart" tabindex="1">
+                <img src=" ./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
-                  <span class="kcal">450 سعر حراري</span>
+                  <span class="kcal">430 سعر حراري</span>
                 </div>
-                <div class="d-flex justify-content-between px-4">
+                <div class="d-flex justify-content-between px-4 d-none">
                   <h6>السعر</h6>
-                  <h6><span class="price-value">100</span></h6>
+                  <h6><span class="price-value">50</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow">
+                  <div class="img-food">
+                    <img src="./assets/imgs/meal1.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      نصف دجاجه علي الفحم
+                    </h5>
+                    <p class="link-secondary">نصف دجاجه علي الفحم</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>السعر</h6>
+                      <h6><span class="price-value">50</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class=alt="carp">
+                      <h4 class="icon-header">كربوهيدرات</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class=alt="calaories">
+                      <h4 class="icon-header">دهون</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class=alt="fats">
+                      <h4 class="icon-header">سعر حراري</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class=alt="proten">
+                      <h4 class="icon-header">بروتين</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="5">اختر الوجبه</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="5">اختر الوجبه</button>
                   <h5 class="meal-name">
-                    وجبه دجاج ماندي مع بطاطس
+                    نصف دجاجه علي الفحم
                   </h5>
                 </div>
               </div>
@@ -225,23 +431,64 @@
           </div>
           <div class="col-md-8 col-lg-4">
             <div class="mealz-content">
-              <div class="meal-img">
-                <img src="./assets/imgs/meal1.JPEG" class="w-100 img-meal" alt="meal1">
+              <div class="meal-img click-cart" tabindex="1">
+                <img src="./assets/imgs/meet2.JPEG" class="w-100 img-meal" alt="meal1">
                 <span class="gramoli-logo"></span>
                 <div class="select-chef">
                   <div></div>
                   <span class="kcal">450 سعر حراري</span>
                 </div>
-                <div class="d-flex justify-content-between px-4">
+                <div class="d-flex justify-content-between px-4 d-none">
                   <h6>السعر</h6>
-                  <h6><span class="price-value">10</span></h6>
+                  <h6><span class="price-value">120</span></h6>
+                </div>
+                <div class="mealz-content-cart hover-meal shadow">
+                  <div class="img-food">
+                    <img src="./assets/imgs/meet2.JPEG" class="img-meal rounded  w-100" alt="meal">
+                  </div>
+                  <div class="icon"></div>
+                  <div class="meal-show text-center">
+                    <h5 class="meal-name">
+                      لحم بخلطه متميزه
+                    </h5>
+                    <p class="link-secondary">لحم بخلطه متميزه</p>
+                    <div class="d-flex justify-content-between px-4 d-none">
+                      <h6>السعر</h6>
+                      <h6><span class="price-value">120</span></h6>
+                    </div>
+                  </div>
+                  <div class="icon-meal d-flex justify-content-around text-center align-items-baseline">
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/carb.PNG" class=alt="carp">
+                      <h4 class="icon-header">كربوهيدرات</h4>
+                      <strong class=" calories">30</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/calaories.PNG" class=alt="calaories">
+                      <h4 class="icon-header">دهون</h4>
+                      <strong class=" calories">60</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/fats.PNG" class=alt="fats">
+                      <h4 class="icon-header">سعر حراري</h4>
+                      <strong class="calories">800</strong>
+                    </div>
+                    <div class="icon-meal-content">
+                      <img src="./assets/imgs/proten.PNG" class=alt="proten">
+                      <h4 class="icon-header">بروتين</h4>
+                      <strong class=" calories">212</strong>
+                    </div>
+                  </div>
+                  <div class="text-center p-3">
+                    <button type="button" class="btn btn-select add-to-cart" data-product-id="6">اختر الوجبه</button>
+                  </div>
                 </div>
               </div>
               <div class="meal-detail">
                 <div class="meal-title pt-5 pb-3 px-2 d-flex justify-content-between align-items-center">
                   <button type="button" class="btn btn-select add-to-cart" data-product-id="6">اختر الوجبه</button>
                   <h5 class="meal-name">
-                    شاورما دجاج مع بطاطس
+                    لحم بخلطه متميزه
                   </h5>
                 </div>
               </div>

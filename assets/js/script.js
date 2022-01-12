@@ -22,4 +22,16 @@ window.addEventListener("scroll", () =>{
   })
 });
 
-// function date picker
+
+// let showCart = document.querySelector('.mealz-content');
+
+// showCart.addEventListener("click", () => {
+//   let showHoverVart = document.querySelector('.hover-meal');
+
+//   if (showHoverVart.style.display === "block") {
+//     showHoverVart.style.display = "none";
+//   } else {
+//   showHoverVart.style.display = "block";
+//   }
+// });
+
